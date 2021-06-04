@@ -9,3 +9,6 @@
 ## 동작
 ▶ 버전 0.1 : 메인 페이지를 만들고 메인페이지에서 운동정보, 운동기록 등으로 이동할 수 있는 링크를 추가하여 이동할 수 있게하고, 각 링크로 이동 시 필요한 정보를 얻거나 기록이 가능하게 합니다.
 * 아직 구현가능한 HTML / CSS 및 Javascript 기술이 부족하여 Website를 선 제작 후 공부하며 개선해나갈 예정입니다.
+
+### Source code
+https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/fitmanager.html
