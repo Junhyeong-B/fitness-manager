@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-image: url('images/backSquat.jpg');
+    background-size: cover;
+}
+
+:root {
+    --text-color: #e4e7e7;
+    --background-color: rgba(32, 32, 32, 0.9);
+    --accent-color: rgb(255, 192, 74);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.container {
+    background-color: var(--background-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.main__head {
+    color: var(--text-color);
+    padding: 8px 12px;
+    font-size: 24px;
+}
+
+.main__head i {
+    color: var(--accent-color);
+}
+
+.main__para {
+    color: var(--text-color);
+    padding: 8px 12px;
+}
+
+.main__links ul{
+    padding: 8px 12px;
+}
+
+.main__links ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 25px;
+    display: inline-block;
+}
+
+.main__links ul li:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px var(--text-color);  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+}
+
+.main__links ul li:hover:after {
+    transform: scaleX(1);
+}
