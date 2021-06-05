@@ -1,14 +1,15 @@
 body {
     margin: 0;
     font-family: 'Oswald', sans-serif;
-    background-image: url('images/backSquat.jpg');
+    background: url('images/backSquat.jpg') no-repeat center;
     background-size: cover;
 }
 
 :root {
-    --text-color: #e4e7e7;
+    --text-color: rgb(228, 231, 231);
     --background-color: rgba(32, 32, 32, 0.9);
     --accent-color: rgb(255, 192, 74);
+    --toggle-color: rgba(0, 0, 0, 0.6);
 }
 
 a {
@@ -35,6 +36,36 @@ a {
     color: var(--accent-color);
 }
 
+.main__toggleBtn {
+    display: none;
+    position: absolute;
+    top: 6px;
+    right: 12px;
+}
+
+.toggle__links {
+    text-align: center;
+}
+
+.toggle__links ul {
+    background-color: var(--toggle-color);
+    border-radius: 10px;
+    display: none;
+}
+
+.toggle__links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+}
+
+.toggle__links ul li:hover {
+    background-color: var(--accent-color);
+    color: black;
+    border-radius: 5px;
+}
+
 .main__para {
     color: var(--text-color);
     padding: 8px 12px;
@@ -47,8 +78,8 @@ a {
 .main__links ul li{
     list-style: none;
     font-size: 18px;
-    padding: 25px;
     display: inline-block;
+    margin: 15px;
 }
 
 .main__links ul li:after {
@@ -62,4 +93,18 @@ a {
 
 .main__links ul li:hover:after {
     transform: scaleX(1);
+}
+
+@media screen and (max-width: 550px){
+    .main__links ul{
+        display: none;
+    }
+
+    .toggle__links ul.active{
+        display: inline-block;
+    }
+
+    .main__toggleBtn{
+        display: block;
+    }
 }
