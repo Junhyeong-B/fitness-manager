@@ -17,5 +17,5 @@
  * Workout Information 창 추가하여 Concept 작성, 세부적인 내용 및 Design은 변경 예정.
 
 ### Source code
-메인 : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/fitmanager.html
-Workout Information : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/workoutinfo.html
+###### 메인 : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/fitmanager.html
+###### Workout Information : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/workoutinfo.html
