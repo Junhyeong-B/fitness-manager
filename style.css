@@ -51,6 +51,7 @@ a {
     background-color: var(--toggle-color);
     border-radius: 10px;
     display: none;
+    padding: 5px;
 }
 
 .toggle__links ul li {
@@ -60,9 +61,12 @@ a {
     margin: 10px;
 }
 
-.toggle__links ul li:hover {
-    background-color: var(--accent-color);
-    color: black;
+.toggle__links ul li a{
+    transition: 250ms;
+}
+
+.toggle__links ul li a:hover {
+    color: var(--accent-color);
     border-radius: 5px;
 }
 
