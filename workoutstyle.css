@@ -68,8 +68,9 @@ a {
 
 .benchPress, .deadLift, .squat {
     background-color: rgb(0, 0, 0);
-    height: 300px;
-    width: 200px;
+    min-height: 300px;
+    min-width: 200px;
+    display: inline-block;
     margin: 5px 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -77,14 +78,71 @@ a {
 .benchPress {
     background: url("images/benchPress.JPG") no-repeat center;
     background-size: contain;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .deadLift {
     background: url("images/deadLift.JPG") no-repeat center;
     background-size: contain;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .squat {
     background: url("images/squat.JPG") no-repeat center;
     background-size: contain;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.benchPress .bench__Info,
+.deadLift .dead__Info,
+.squat .squat__Info {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    position: relative;
+    top: 290px;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 400ms ease;
+}
+
+.benchPress .bench__Info h3,
+.deadLift .dead__Info h3,
+.squat .squat__Info h3 {
+    display: inline-block;
+    color: var(--text-color);
+    margin: 5px;
+    transition: 250ms;
+}
+
+.benchPress .bench__Info i,
+.deadLift .dead__Info i,
+.squat .squat__Info i {
+    color: var(--text-color);
+    transition: 200ms;
+}
+
+.benchPress:hover .bench__Info,
+.deadLift:hover .dead__Info,
+.squat:hover .squat__Info {
+    opacity: 1;
+    transform: translateY(-290px);
+}
+
+.benchPress .bench__Info .bench__Open h3:hover,
+.deadLift .dead__Info .dead__Open h3:hover,
+.squat .squat__Info .squat__Open h3:hover {
+    color: var(--accent-color);
+}
+
+.benchPress .bench__Info .bench__Open i:hover,
+.deadLift .dead__Info .dead__Open i:hover,
+.squat .squat__Info .squat__Open i:hover {
+    color: var(--accent-color);
 }
