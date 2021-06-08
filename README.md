@@ -16,6 +16,7 @@
 ▶ 버전 0.3 : bar 버튼으로 생성된 메뉴들에 커서 위치 시 background-color 변경 → color 변경 및 transition 추가하여 자연스럽게 변경, 사진 용량 Down
  * Workout Information 창 추가하여 Concept 작성, 세부적인 내용 및 Design은 변경 예정.
  * 버전 0.3.1 : Workout Information 창에 사진 및 사진에 hover 시 div transform을 통해 아래쪽에서 클릭 가능한 창 올라오고, 글자에 따로 hover 시 색깔 변화를 줘서 클릭 가능한지 구분 가능하게 변경.
+ * 버전 0.3.2 : 사진에 hover로 나타나는 글씨를 클릭하면 해당 운동 정보가 나타나는 popup 창 추가하였습니다.(해당 버전에선 운동 1개만 적용 중)
 
 ### Source code
 ###### 메인 : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/fitmanager.html
