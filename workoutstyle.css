@@ -8,7 +8,13 @@
 body {
     margin: 0;
     font-family: 'Oswald', sans-serif;
-    background-color: rgb(235, 235, 235);
+    background-color: #fffcf2;
+}
+
+h3 {
+    font-family: 'Jua', sans-serif;
+    display: inline-block;
+    margin: 20px;
 }
 
 a {
@@ -17,8 +23,7 @@ a {
 }
 
 .header {
-    background-color: black;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px 2px, rgba(0, 0, 0, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    background-color: #000000;
 }
 
 .main__head {
@@ -57,6 +62,32 @@ a {
 
 .main__links ul li:hover:after {
     transform: scaleX(1);
+}
+
+.sidebar {
+    font-family: 'Staatliches', cursive;
+    float: left;
+    width: 200px;
+    height: 100vh;
+    background-color: #403d39;
+    padding: 8px 20px;
+}
+
+.sidebar .sidebar__links p {
+    margin-bottom : 30px;
+    font-size: 19px;
+}
+
+.sidebar__links span {
+    font-family: 'Jua', sans-serif;
+}
+
+.sidebar__links a {
+    transition: 200ms ease-in-out;
+}
+
+.sidebar .sidebar__links a:hover {
+    color: var(--accent-color);
 }
 
 .container {
@@ -184,6 +215,96 @@ a {
 }
 
 .modal__Bench a {
+    font-size: 30px;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    color: var(--accent-color);
+    width: 30px;
+}
+
+.modal__Dead {
+    font-family: 'Jua', sans-serif;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    visibility: hidden;
+    transition: 500ms;
+}
+
+.modal__Dead iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.modal__Dead ol {
+    margin: 0;
+    text-align: left;
+    width: 550px;
+}
+
+.modal__Dead .dead__Modal {
+    background-color: rgb(255, 240, 220);
+    width: 630px;
+    border-radius: 5px;
+    transition: 300ms ease-in-out;
+    transform: scale(0);
+}
+
+.modal__Dead a {
+    font-size: 30px;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    color: var(--accent-color);
+    width: 30px;
+}
+
+.modal__Squat {
+    font-family: 'Jua', sans-serif;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    visibility: hidden;
+    transition: 500ms;
+}
+
+.modal__Squat iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.modal__Squat ol {
+    margin: 0;
+    text-align: left;
+    width: 550px;
+}
+
+.modal__Squat .squat__Modal {
+    background-color: rgb(255, 240, 220);
+    width: 630px;
+    border-radius: 5px;
+    transition: 300ms ease-in-out;
+    transform: scale(0);
+}
+
+.modal__Squat a {
     font-size: 30px;
     display: block;
     margin: 5px auto;
