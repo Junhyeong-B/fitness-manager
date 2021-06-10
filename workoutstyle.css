@@ -312,3 +312,35 @@ a {
     color: var(--accent-color);
     width: 30px;
 }
+
+@media screen and (max-width: 776px){
+    .main__links.active {
+        display: none;
+    }
+
+    .sidebar.active {
+        display: block;
+    }
+
+    .sidebar {
+        display: none;
+        float: none;
+        width: 100vw;
+        height: 215px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .sidebar .sidebar__links p {
+        margin: 0 0 5px 0;
+        padding-top: 5px;
+    }
+
+    .main__head .main__toggleBtn{
+        display: inline-block;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+}

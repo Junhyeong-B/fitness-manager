@@ -51,3 +51,54 @@ function closeModal__Squat() {
 
 squatModal.addEventListener('click', openModal__Squat);
 squatModal2.addEventListener('click', closeModal__Squat);
+
+// 776 px 미만일 때 토글
+const toggleBtn = document.querySelector('.main__toggleBtn');
+const mainMenu = document.querySelector('.main__links');
+const toggleMenu = document.querySelector('.sidebar');
+
+function toggle() {
+    mainMenu.classList.toggle('active');
+    toggleMenu.classList.toggle('active');
+}
+
+toggleBtn.addEventListener('click', toggle)
+
+// 776 px 미만일 때 운동정보 사이즈 조절
+// const benchVideo = document.querySelector('.workout__Bench');
+// const deadVideo = document.querySelector('.workout__Dead');
+// const squatVideo = document.querySelector('.workout__Squat');
+
+// const benchSize = document.querySelector('.bench__Modal');
+// const deadSize = document.querySelector('.dead__Modal');
+// const squatSize = document.querySelector('.squat__Modal');
+
+// const olModal = document.getElementsByTagName('ol');
+
+// if (window.matchMedia("(max-width: 776px)").matches) {
+//     benchVideo.style.width = "70%";
+//     deadVideo.style.width = "70%";
+//     squatVideo.style.width = "70%";
+//     benchSize.style.width = "95%";
+//     deadSize.style.width = "95%";
+//     squatSize.style.width = "95%";
+//     olModal.style.width = "90%";
+// }
+
+const videoSize = document.querySelectorAll('iframe');
+const modalSize = document.querySelectorAll('ol');
+const benchSize = document.querySelector('.bench__Modal');
+const deadSize = document.querySelector('.dead__Modal');
+const squatSize = document.querySelector('.squat__Modal');
+
+
+if (window.matchMedia("(max-width: 776px)").matches) {
+        for (let i = 0 ; i < videoSize.length ; i++) {
+            videoSize[i].style.width = "85%";
+            modalSize[i].style.width = "85%"
+        }
+
+    benchSize.style.width = "90%";
+    deadSize.style.width = "90%";
+    squatSize.style.width = "90%";
+    }
