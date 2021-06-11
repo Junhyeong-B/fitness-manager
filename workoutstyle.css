@@ -14,7 +14,11 @@ body {
 h3 {
     font-family: 'Jua', sans-serif;
     display: inline-block;
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
+}
+
+h3.up {
+    display: none;
 }
 
 a {
@@ -24,6 +28,7 @@ a {
 
 .header {
     background-color: #000000;
+    overflow: hidden;
 }
 
 .main__head {
@@ -36,7 +41,29 @@ a {
     color: var(--accent-color);
 }
 
-.main__head .main__toggleBtn{
+.main__head .main__toggleBtn {
+    display: none;
+}
+
+.main__head .workout__angledown i,
+.main__head .workout__angleup i {
+    position: relative;
+    background-color: black;
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+    padding: 3px 0;
+    color: white;
+    transition: 300ms ease-in-out;
+    border-radius: 5px;
+}
+
+.main__head .workout__angledown i:hover,
+.main__head .workout__angleup i:hover {
+    background-color: #9a8c98;
+}
+
+.workout__angleup {
     display: none;
 }
 
@@ -47,7 +74,7 @@ a {
 .main__links ul li{
     list-style: none;
     font-size: 18px;
-    display: inline-block;
+    display: none;
     margin: 15px;
 }
 
@@ -62,6 +89,15 @@ a {
 
 .main__links ul li:hover:after {
     transform: scaleX(1);
+}
+
+.thisP {
+    text-align: center;
+    margin: 0;
+    display: block;
+    font-weight: bolder;
+    font-size: 18px;
+    color: var(--accent-color);
 }
 
 .sidebar {
@@ -314,8 +350,21 @@ a {
 }
 
 @media screen and (max-width: 776px){
-    .main__links.active {
+    .main__head .workout__angledown i,
+    .main__head .workout__angleup i {
+        display: block;
+    }
+
+    .workout__angledown.active {
         display: none;
+    }
+
+    .workout__angleup.active {
+        display: block;
+    }
+
+    .main__links.active ul li{
+        display: inline-block;
     }
 
     .sidebar.active {
@@ -326,12 +375,16 @@ a {
         display: none;
         float: none;
         width: 100vw;
-        height: 215px;
+        height: 210px;
         text-align: center;
         margin: 0;
         padding: 0;
     }
-    
+
+    .sidebar .thisPage {
+        color: var(--accent-color);
+    }
+
     .sidebar .sidebar__links p {
         margin: 0 0 5px 0;
         padding-top: 5px;
@@ -343,4 +396,5 @@ a {
         top: 5px;
         right: 10px;
     }
+
 }
