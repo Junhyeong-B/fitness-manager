@@ -13,12 +13,12 @@ body {
 
 h3 {
     font-family: 'Jua', sans-serif;
-    display: inline-block;
+    display: none;
     margin: 20px 20px 0px 20px;
 }
 
 h3.up {
-    display: none;
+    display: inline-block;
 }
 
 a {
@@ -74,7 +74,7 @@ a {
 .main__links ul li{
     list-style: none;
     font-size: 18px;
-    display: none;
+    display: inline-block;
     margin: 15px;
 }
 
@@ -123,6 +123,10 @@ a {
 }
 
 .sidebar .sidebar__links a:hover {
+    color: var(--accent-color);
+}
+
+.sidebar .sidebar__links .thisPage {
     color: var(--accent-color);
 }
 
@@ -355,6 +359,10 @@ a {
         display: block;
     }
 
+    .main__links ul li{
+        display: none;
+    }
+
     .workout__angledown.active {
         display: none;
     }
@@ -375,7 +383,7 @@ a {
         display: none;
         float: none;
         width: 100vw;
-        height: 210px;
+        height: 212px;
         text-align: center;
         margin: 0;
         padding: 0;
@@ -396,5 +404,14 @@ a {
         top: 5px;
         right: 10px;
     }
+
+    h3 {
+        display: inline-block;
+    }
+
+    h3.up {
+        display: none;
+    }
+
 
 }

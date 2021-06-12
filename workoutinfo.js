@@ -81,7 +81,6 @@ const modalSize = document.querySelectorAll('ol');
 const benchSize = document.querySelector('.bench__Modal');
 const deadSize = document.querySelector('.dead__Modal');
 const squatSize = document.querySelector('.squat__Modal');
-const h3Display = document.querySelectorAll('h3');
 
 const mediaQuery = window.matchMedia("(max-width: 776px)");
 
@@ -94,9 +93,6 @@ function mediaHandle(media) {
         benchSize.style.width = "90%";
         deadSize.style.width = "90%";
         squatSize.style.width = "90%";
-        for (let j in h3Display) {
-            h3Display[j].classList.toggle('up');
-        }
     }
     else {
         for (let i = 0 ; i < videoSize.length ; i++) {
@@ -106,11 +102,18 @@ function mediaHandle(media) {
         benchSize.style.width = "630px";
         deadSize.style.width = "630px";
         squatSize.style.width = "630px";
-        for (let j in h3Display) {
-            h3Display[j].classList.toggle('up');
-        }
     }
 }
 
 mediaQuery.addListener(mediaHandle);
 mediaHandle(mediaQuery);
+
+// 해당 운동으로 들어가면 Title 변경
+const titleCh = document.querySelector("title");
+const thisPage = document.querySelector(".thisPage");
+
+function titleChange() {
+    titleCh.innerText = thisPage.innerText;
+}
+
+thisPage.addEventListener('click', titleChange);
