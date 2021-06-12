@@ -27,3 +27,4 @@
 ### Source code
 ###### 메인 : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/fitmanager.html
 ###### Workout Information : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/workoutinfo.html
+###### Workout Log : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/workoutlog.html
