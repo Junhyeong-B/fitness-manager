@@ -23,8 +23,10 @@
  * 버전 0.4 : 화면이 일정 px 이상일 때 main link는 항상 표시되도록 수정하였고, 넓을 때도 현재 페이지를 색깔로 표시하여 사용자가 인식 가능하게 함. +) JS를 이용해 운동 분류 tap click 시 title을 바뀌게하여 사용자가 현재 페이지를 인식할 수 있게 함.
 
 ▶ 버전 0.4 : Workout Log Page 추가. 최초 아이디어로 이전 운동 기록 확인 링크와 운동 기록 입력 링크 두가지로 나뉘어 표시함. 직관적으로 알아볼 수 있는 아이콘 이미지를 활용하였고, 이미지에 커서 이동 시 link 이동 정보를 translate 하여 보여줌.
+ * 버전 0.4.1 : Workout Log Page에서 당일 운동 계획 메뉴를 추가하였고, 해당 메뉴는 차후 진입 시 당일 날짜, 시간 등이 표시되고, 해야할 운동의 종목을 입력하여 버튼을 클릭하면 List가 형성되어 Check 또는 Delete가 가능하도록 추가할 예정.
 
 ### Source code
 ###### 메인 : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/fitmanager.html
 ###### Workout Information : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/workoutinfo.html
 ###### Workout Log : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/workoutlog.html
+###### Workout Log - Today workout List : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/logtodo.html
