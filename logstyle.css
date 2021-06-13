@@ -55,15 +55,27 @@ a {
     transform: scaleX(1);
 }
 
+/* .time h1 {
+    text-align: center;
+    border: black 1px solid;
+    box-shadow: 2px 2px 1px grey;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 4rem;
+    line-height: 4rem;
+    margin: 20px auto;
+    color: rgb(0, 0, 0);
+} */
+
 .main {
     display: flex;
-    align-items: center;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .main .diary,
-.main .plus  {
+.main .plus,
+.main .todayLog  {
     width: 250px;
     height: 250px;
     margin: 50px;
@@ -75,6 +87,10 @@ a {
     background: url(images/diary.png) no-repeat center #bee3db;
 }
 
+.todayLog {
+    background: url(images/list.png) no-repeat center #bee3db;
+}
+
 .plus {
     background: url(images/plus.png) no-repeat center #bee3db;
 }
@@ -83,7 +99,7 @@ a {
     font-family: 'Black Han Sans', sans-serif;
     text-align: left;
     vertical-align: middle;
-    color: rgb(245, 230, 207);
+    color: rgb(255, 255, 255);
     margin: 0;
     padding: 20px;
     position: relative;
@@ -97,7 +113,8 @@ a {
 }
 
 .main .diary:hover h1,
-.main .plus:hover h1 {
+.main .plus:hover h1,
+.main .todayLog:hover h1 {
     transform: translateY(-230px);
 
 }
