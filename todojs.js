@@ -1,7 +1,7 @@
 // 당일 운동 계획 버튼
-const workoutList = document.querySelector('.list');
+const workoutList = document.querySelector('.list__input');
 const workoutBtn = document.querySelector('.list__btn');
-const ulList = document.querySelector('ul__list');
+const ulList = document.querySelector('.ul__list');
 
 function createList() {
 
@@ -9,7 +9,7 @@ function createList() {
     listDiv.classList.add('doList');
 
     const newList = document.createElement('li');
-    newList.innerText = '입력 예제입니다.';
+    newList.innerText = workoutList.value;
     newList.classList.add('list__workout');
     listDiv.appendChild(newList);
 
@@ -27,3 +27,24 @@ function createList() {
 }
 
 workoutBtn.addEventListener('click', createList);
+
+// 현재 시간 표시
+const timeDisplay = document.querySelector(".time");
+const dayArray = ["일", "월", "화", '수', '목', '금', '토'];
+
+function getTime() {
+    const date = new Date();
+    const today = date.toLocaleDateString();
+    const minutes = date.getMinutes();
+    const hours = date.getHours();
+    const day = date.getDay();
+    timeDisplay.innerHTML = `${today} <span>(${dayArray[day]})</span> <br>
+        ${hours < 13 ? `오전 ${hours}` : `오후 ${hours - 12}` } : ${minutes < 10 ? `0${minutes}` : minutes}`;
+}
+
+function init() {
+    getTime();
+    setInterval(getTime, 1000);
+}
+
+init();
