@@ -6,6 +6,7 @@
     <title>Fitness Manager</title>
     <link rel="stylesheet" href="todostyle.css" >
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -27,11 +28,11 @@
             
         </div>
         
-        <h1 class="time">시간 표시</h1>\
+        <h1 class="time">시간 표시</h1>
         <h2>해야 할 운동 종목을 작성하세요.(운동 종목 / 무게 / Set 수)</h2>
         <div class="main">
             <form onsubmit="return false;">
-                <input type="text" class="list">
+                <input type="text" class="list__input">
                 <button class="list__btn">
                     <i class="fas fa-plus-square"></i>
                 </button>
@@ -44,9 +45,9 @@
         </div>
     </div>
 
+    <script src="todojs.js" defer></script>
     <script src="https://kit.fontawesome.com/c6ef7432cb.js"
     crossorigin="anonymous">
     </script>
 </body>
-    <script src="todojs.js" defer></script>
 </html>
