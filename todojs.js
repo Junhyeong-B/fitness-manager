@@ -44,7 +44,31 @@ function getTime() {
 
 function init() {
     getTime();
-    setInterval(getTime, 1000);
+    setInterval(getTime, 10000);
 }
 
 init();
+
+// Complete, Delete 기능
+const completebtn = document.querySelector('.completed__btn');
+const deletebtn = document.querySelector('.delete__btn');
+
+
+ulList.addEventListener('click', checked);
+
+function checked(e) {
+    const item = e.target;
+
+    if(item.classList[0] === 'delete__btn') {
+        const list = item.parentElement;
+        list.classList.add("fall");
+        list.addEventListener('transitionend', function(){
+            list.remove();
+        });
+    }
+
+    if(item.classList[0] === 'completed__btn') {
+        const list = item.parentElement;
+        list.classList.toggle('completed');
+    }
+}
