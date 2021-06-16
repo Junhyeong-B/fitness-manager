@@ -44,7 +44,7 @@ function getTime() {
 
 function init() {
     getTime();
-    setInterval(getTime, 10000);
+    setInterval(getTime, 5000);
 }
 
 init();
@@ -72,3 +72,35 @@ function checked(e) {
         list.classList.toggle('completed');
     }
 }
+
+// 필터링 By Select
+const filterOption = document.querySelector('.filter__list');
+
+function filterList(e) {
+    const lists = ulList.childNodes;
+    lists.forEach(function(option){
+        switch(e.target.value){
+            case "all":
+                option.style.display = "flex";
+                break;
+            case "completed":
+                if(option.classList.contains('completed')){
+                    option.style.display = 'flex';
+                }
+                else{
+                    option.style.display = 'none';
+                }
+                break;
+            case "uncompleted":
+                if(option.classList.contains('completed')){
+                    option.style.display = 'none';
+                }
+                else{
+                    option.style.display = 'flex';
+                }
+                break;
+        }
+    })
+}
+
+filterOption.addEventListener('click', filterList);

@@ -194,10 +194,6 @@ select {
     width: 10rem;
 }
 
-select .filter__list {
-    padding: 1rem;
-}
-
 .select {
     margin: 1rem;
     display: inline;
@@ -206,11 +202,27 @@ select .filter__list {
     left: 2rem;
 }
 
-/* .select::after {
+.filter__list {
+    color: rgb(207, 91, 13);
+    background-color: #f4f3ee;
+    width: 12rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select::after {
     content: "\25BC";
     position: absolute;
-    top: 0;
+    top: -8.7px;
     right: 0;
-    padding: 1rem;
+    padding: 0.7rem;
     pointer-events: none;
-} */
+    color: var(--accent-color);
+    background-color: #f4f3ee;
+    transition: all 300ms ease;
+}
+
+.select:hover::after {
+    color: #f4f3ee;
+    background-color: var(--accent-color);
+}
