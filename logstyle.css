@@ -55,18 +55,6 @@ a {
     transform: scaleX(1);
 }
 
-/* .time h1 {
-    text-align: center;
-    border: black 1px solid;
-    box-shadow: 2px 2px 1px grey;
-    border-radius: 1rem;
-    width: 20rem;
-    height: 4rem;
-    line-height: 4rem;
-    margin: 20px auto;
-    color: rgb(0, 0, 0);
-} */
-
 .main {
     display: flex;
     flex-flow: row wrap;
@@ -76,23 +64,23 @@ a {
 .main .diary,
 .main .plus,
 .main .todayLog  {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     margin: 50px;
     background-size: 70%;
     overflow: hidden;
 }
 
 .diary {
-    background: url(images/diary.png) no-repeat center #bee3db;
+    background: url(images/diary.png) no-repeat center #ffadad;
 }
 
 .todayLog {
-    background: url(images/list.png) no-repeat center #bee3db;
+    background: url(images/list.png) no-repeat center #ffd6a5;
 }
 
 .plus {
-    background: url(images/plus.png) no-repeat center #bee3db;
+    background: url(images/plus.png) no-repeat center #fdffb6;
 }
 
 .main h1 {
@@ -103,19 +91,30 @@ a {
     margin: 0;
     padding: 20px;
     position: relative;
-    top: 230px;
-    font-size: 25px;
-    width: 210px;
-    height: 210px;
-    background-color: #3a506b;
+    top: 280px;
+    font-size: 30px;
+    width: 300px;
+    height: 300px;
     transition: 300ms ease-in-out;
     font-weight: 500;
+}
+
+.main .plus h1 {
+    background-color: #ffadad;
+}
+
+.main .diary h1 {
+    background-color: #ffd6a5;
+}
+
+.main .todayLog h1 {
+    background-color: #a0c4ff;
 }
 
 .main .diary:hover h1,
 .main .plus:hover h1,
 .main .todayLog:hover h1 {
-    transform: translateY(-230px);
+    transform: translateY(-280px);
 
 }
 

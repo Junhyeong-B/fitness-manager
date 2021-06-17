@@ -29,13 +29,36 @@
         </div>
         
         <h1 class="time">시간 표시</h1>
-        <h2>해야 할 운동 종목을 작성하세요.(운동 종목 / 무게 / Set 수)</h2>
+        <h2>할 일 등록</h2>
         <div class="main">
             <form onsubmit="return false;">
+
+                <div class="workoutSelect">
+                    <h3>운동 종목 선택</h3>
+                    <select name="work" class="workSel">
+                        <option value="check">선택하세요</option>
+                        <option value="chest">가슴</option>
+                        <option value="back">등</option>
+                        <option value="leg">하체</option>
+                        <option value="shoulder">어깨</option>
+                        <option value="arm">팔</option>
+                    </select>
+
+                    <div class="radio">
+                        <input type="radio" name="chestwork" value="벤치 프레스"> 벤치 프레스
+                        <input type="radio" name="chestwork" value="덤벨 프레스"> 덤벨 프레스
+                        <input type="radio" name="chestwork" value="덤벨 플라이"> 덤벨 플라이
+                        <input type="radio" name="chestwork" value="체스트 프레스"> 체스트 프레스
+                        <input type="radio" name="chestwork" value="케이블 크로스 오버"> 케이블 크로스 오버
+                        <input type="radio" name="chestwork" value="딥스"> 딥스
+                    </div>
+                </div>
+
                 <input type="text" class="list__input">
                 <button class="list__btn">
                     <i class="fas fa-plus-square"></i>
                 </button>
+
                 <div class="select">
                     <select name="list" class="filter__list">
                         <option value="all">All</option>

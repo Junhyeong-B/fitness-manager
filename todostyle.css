@@ -104,6 +104,7 @@ form button:hover {
 h2 {
     font-family: 'Jua', sans-serif;
     font-weight: 600;
+    font-size: 2rem;
 }
 
 .time {
@@ -113,7 +114,7 @@ h2 {
     margin-top: 40px;
     width: 400px;
     padding: 10px;
-    background-color: rgb(255, 225, 185);
+    background-color: #fffffc;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     color: rgb(50, 50, 50);
 }
@@ -184,7 +185,7 @@ h2 {
     opacity: 0;
 }
 
-select {
+.select select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -208,6 +209,7 @@ select {
     width: 12rem;
     cursor: pointer;
     padding: 1rem;
+    margin: 0.5rem;
 }
 
 .select::after {
@@ -225,4 +227,15 @@ select {
 .select:hover::after {
     color: #f4f3ee;
     background-color: var(--accent-color);
+}
+
+.radio input {
+    font-size: 1rem;
+    border: none;
+    padding: 1rem;
+    height: 1rem;
+    width: 1rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    text-align: center;
 }

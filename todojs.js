@@ -104,3 +104,14 @@ function filterList(e) {
 }
 
 filterOption.addEventListener('click', filterList);
+
+// 체크 클릭 시 해당 내용 input text에 추가
+const checkRadio = document.getElementsByName('chestwork');
+
+function getWorkSelect(event) {
+    workoutList.value = event.target.value;
+}
+
+    for (var i = 0 ; i < checkRadio.length; i++) {
+        checkRadio[i].addEventListener('click', getWorkSelect) ; 
+ }
