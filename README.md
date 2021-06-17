@@ -26,7 +26,9 @@
  * 버전 0.4.1 : Workout Log Page에서 당일 운동 계획 메뉴를 추가하였고, 해당 메뉴는 차후 진입 시 당일 날짜, 시간 등이 표시되고, 해야할 운동의 종목을 입력하여 버튼을 클릭하면 List가 형성되어 Check 또는 Delete가 가능하도록 추가할 예정.
  * 버전 0.4.2 : 당일 운동 계획 메뉴에 들어가면 Date 객체를 이용해 접속했을 때의 날짜, 요일, 시간 등을 표현했고, 아래 Text 타입 input을 추가하여 사용자가 운동 계획을 추가할 수 있도록 하였음.
  * 버전 0.4.3 : Input에 값을 입력하면 Input 창 아래에 입력한 list가 나오게 되고, check 버튼, delete 버튼을 추가해서 check 버튼 클릭하면 line through가 되어 사용자가 check한 것을 눈으로 인식할 수 있게 하고, delete 버튼을 누르면 transform 후 지워지는 애니메이션을 추가 / filter 할 수 있는 select를 추가.(아직 기능은 미구현)
- * 버전 0.4.3 : filter 기능을 수행하는 select를 추가하여 complete 시 check 되어있는 list만 보여주고, uncomplete 시 check가 되어있는 list를 제외한 나머지 list들을 보여주도록 추가.
+ * 버전 0.4.3.1 : filter 기능을 수행하는 select를 추가하여 complete 시 check 되어있는 list만 보여주고, uncomplete 시 check가 되어있는 list를 제외한 나머지 list들을 보여주도록 추가.
+ * 버전 0.4.3.2 : Workout Log 창 들어갔을 때 나타나는 아이콘 3개의 배경색을 파스텔 톤으로 변경해서 보기 편안하게 수정.
++)Workout Log 창에서 Select를 추가하여 가슴~팔 등 5가지의 분할을 선택할 수 있게했고, 선택함에 따라 나타나는 radio type input에 따라 클릭하면 자동으로 input text 칸에 입력되도록 수정(현재 radio 체크박스는 가슴 운동만 표시되며 기능 추가 예정)
 
 ### Source code
 ###### 메인 : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/fitmanager.html
