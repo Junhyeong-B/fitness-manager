@@ -34,24 +34,59 @@
             <form onsubmit="return false;">
 
                 <div class="workoutSelect">
+                    <div class="bodySelect">
                     <h3>운동 종목 선택</h3>
-                    <select name="work" class="workSel">
-                        <option value="check">선택하세요</option>
-                        <option value="chest">가슴</option>
-                        <option value="back">등</option>
-                        <option value="leg">하체</option>
-                        <option value="shoulder">어깨</option>
-                        <option value="arm">팔</option>
-                    </select>
-
-                    <div class="radio">
-                        <input type="radio" name="chestwork" value="벤치 프레스"> 벤치 프레스
-                        <input type="radio" name="chestwork" value="덤벨 프레스"> 덤벨 프레스
-                        <input type="radio" name="chestwork" value="덤벨 플라이"> 덤벨 플라이
-                        <input type="radio" name="chestwork" value="체스트 프레스"> 체스트 프레스
-                        <input type="radio" name="chestwork" value="케이블 크로스 오버"> 케이블 크로스 오버
-                        <input type="radio" name="chestwork" value="딥스"> 딥스
+                        <select name="work" class="workSel">
+                            <option>운동 종목 선택</option>
+                            <option value="chest">가슴</option>
+                            <option value="back">등</option>
+                            <option value="leg">하체</option>
+                            <option value="shoulder">어깨</option>
+                            <option value="arm">팔</option>
+                        </select>
                     </div>
+
+                    <div class="chestRadio">
+                        <input type="radio" name="chestwork" value="벤치 프레스 "> 벤치 프레스
+                        <input type="radio" name="chestwork" value="덤벨 프레스 "> 덤벨 프레스
+                        <input type="radio" name="chestwork" value="덤벨 플라이 "> 덤벨 플라이
+                        <input type="radio" name="chestwork" value="체스트 프레스 "> 체스트 프레스
+                        <input type="radio" name="chestwork" value="케이블 크로스 오버 "> 케이블 크로스 오버
+                        <input type="radio" name="chestwork" value="딥스 "> 딥스
+                    </div>
+
+                    <div class="setSelect">
+                        <select name="set" class="setSelect">
+                            <option>Set</option>
+                            <option value="1 Set ">1 Set</option>
+                            <option value="2 Set ">2 Set</option>
+                            <option value="3 Set ">3 Set</option>
+                            <option value="4 Set ">4 Set</option>
+                            <option value="5 Set ">5 Set</option>
+                            <option value="6 Set ">6 Set</option>
+                            <option value="7 Set ">7 Set</option>
+                            <option value="8 Set ">8 Set</option>
+                            <option value="9 Set ">9 Set</option>
+                            <option value="10 Set ">10 Set</option>
+                        </select>
+                    </div>
+                    <div class="weightSelect">
+                        <select name="wei" class="weiSelect">
+                            <option>Weight</option>
+                            <option value="answer">직접 입력</option>
+                            <option value="5 kg ">5 kg</option>
+                            <option value="10 kg ">10 kg</option>
+                            <option value="15 kg ">15 kg</option>
+                            <option value="20 kg ">20 kg</option>
+                            <option value="25 kg ">25 kg</option>
+                            <option value="30 kg ">30 kg</option>
+                            <option value="35 kg ">35 kg</option>
+                            <option value="40 kg ">40 kg</option>
+                            <option value="45 kg ">45 kg</option>
+                            <option value="50 kg ">50 kg</option>
+                        </select>
+                    </div>
+                    <input type='reset' class='resetInput'>
                 </div>
 
                 <input type="text" class="list__input">

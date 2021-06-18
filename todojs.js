@@ -105,13 +105,24 @@ function filterList(e) {
 
 filterOption.addEventListener('click', filterList);
 
-// 체크 클릭 시 해당 내용 input text에 추가
+// Radio 및 Select 선택 시 해당 내용 input text에 추가
 const checkRadio = document.getElementsByName('chestwork');
+const setSelect = document.getElementsByName('set');
+const weiSelect = document.getElementsByName('wei'); 
+
 
 function getWorkSelect(event) {
-    workoutList.value = event.target.value;
+    workoutList.value += event.target.value;
 }
-
-    for (var i = 0 ; i < checkRadio.length; i++) {
-        checkRadio[i].addEventListener('click', getWorkSelect) ; 
- }
+//Radio
+for (let i = 0 ; i < checkRadio.length; i++) {
+        checkRadio[i].addEventListener('change', getWorkSelect) ; 
+}
+//Set 선택 Select
+for (let i = 0 ; i < setSelect.length; i++) {
+    setSelect[i].addEventListener('change', getWorkSelect) ; 
+}
+//무게 선택 Select
+for (let i = 0 ; i < weiSelect.length; i++) {
+    weiSelect[i].addEventListener('change', getWorkSelect) ; 
+}
