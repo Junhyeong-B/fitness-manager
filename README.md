@@ -29,6 +29,7 @@
  * 버전 0.4.3.1 : filter 기능을 수행하는 select를 추가하여 complete 시 check 되어있는 list만 보여주고, uncomplete 시 check가 되어있는 list를 제외한 나머지 list들을 보여주도록 추가.
  * 버전 0.4.3.2 : Workout Log 창 들어갔을 때 나타나는 아이콘 3개의 배경색을 파스텔 톤으로 변경해서 보기 편안하게 수정.
 +)Workout Log 창에서 Select를 추가하여 가슴~팔 등 5가지의 분할을 선택할 수 있게했고, 선택함에 따라 나타나는 radio type input에 따라 클릭하면 자동으로 input text 칸에 입력되도록 수정(현재 radio 체크박스는 가슴 운동만 표시되며 기능 추가 예정)
+ * 버전 0.4.3.3 : Set 수, 무게(kg)을 간단하게 설정할 수 있는 Select를 만들었고, 해당 Select를 설정하면 Input Text값에 자동으로 입력되게 기능 추가함, 초기화 버튼을 생성하여 입력한 내용을 모두 지울 수 있도록 설정, CSS를 수정해서 좀 더 보기 좋은 색상, 모양으로 변경.
 
 ### Source code
 ###### 메인 : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/fitmanager.html
