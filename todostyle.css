@@ -215,9 +215,9 @@ h2 {
 .select::after {
     content: "\25BC";
     position: absolute;
-    top: -8.7px;
+    top: -14.5px;
     right: 0;
-    padding: 0.7rem;
+    padding: 0.74rem;
     pointer-events: none;
     color: var(--accent-color);
     background-color: #f4f3ee;
@@ -250,15 +250,14 @@ h2 {
     cursor: pointer;
     width: 10rem;
     padding: 1rem;
-    margin: 1rem auto;
     overflow: hidden;
-    
     background-color: #f4f3ee;
 }
 
 .setSelect,
-.weightSelect{
-    display: inline-block;
+.weightSelect,
+.bodySelect {
+    display: inline;
     margin: auto;
 }
 
