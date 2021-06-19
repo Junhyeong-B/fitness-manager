@@ -1,0 +1,182 @@
+:root {
+    --text-color: rgb(228, 231, 231);
+    --background-color: rgba(94, 94, 94, 0.9);
+    --accent-color: rgb(255, 192, 74);
+    --toggle-color: rgba(0, 0, 0, 0.6);
+}
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: #fffcf2;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.main__head {
+    color: var(--text-color);
+    padding: 8px 12px;
+    font-size: 24px;
+}
+
+.main__head i {
+    color: var(--accent-color);
+}
+
+.main__links ul{
+    margin: 0;
+}
+
+.main__links ul li{
+    list-style: none;
+    font-size: 18px;
+    display: inline-block;
+    margin: 15px;
+}
+
+.main__links ul li:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px var(--text-color);  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+}
+
+.main__links ul li:hover:after {
+    transform: scaleX(1);
+}
+
+.head {
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+}
+
+.head ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 5px;
+    padding: 0;
+}
+
+.head ul li {
+    width: 5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 0.3rem;
+    background-color: #e7d8c9;
+    margin: 20px;
+}
+
+.head p,
+.head h3 {
+    margin-bottom: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.main .healthy,
+.main .training,
+.main .stretching {
+    width: 30%;
+    height: 80%;
+    margin: 10px;
+}
+
+.main .training {
+    background: url('images/training.jpg') no-repeat center;
+    background-size: cover;
+    transition: all 300ms ease-in-out;
+}
+
+.main .healthy {
+    background: url('images/healthy.jpg') no-repeat center;
+    background-size: cover;
+    transition: all 300ms ease-in-out;
+}
+
+.main .stretching {
+    background: url('images/stretching.jpg') no-repeat center;
+    background-size: cover;
+    transition: all 300ms ease-in-out;
+}
+
+.main .training .trainText,
+.main .healthy .healthyText,
+.main .stretching .stretchText {
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 30px;
+    transition: all 300ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.main .training .trainText {
+    background-color: #c6def199;
+}
+
+.main .healthy .healthyText {
+    background-color: #f2c6de99;
+}
+
+.main .stretching .stretchText {
+    background-color: #faedcb99;
+}
+
+.main .training .trainText h2,
+.main .healthy .healthyText h2,
+.main .stretching .stretchText h2 {
+    display: inline-block;
+    margin: 0;
+}
+.main .training .trainText a,
+.main .healthy .healthyText a,
+.main .stretching .stretchText a {
+    color: black;
+    transition: all 300ms ease;
+}
+
+.main .training .trainText a:hover{
+    color: #0f4c5c;
+}
+.main .healthy .healthyText a:hover{
+    color: #ff6b6b;
+}
+.main .stretching .stretchText a:hover {
+    color: #f7b801;
+}
+
+.main .training:hover,
+.main .healthy:hover,
+.main .stretching:hover { 
+    transform: scale(1.1) translateY(-30px);
+}
+
+.main .training:hover .trainText,
+.main .healthy:hover .healthyText,
+.main .stretching:hover .stretchText {
+    opacity: 1;
+}
