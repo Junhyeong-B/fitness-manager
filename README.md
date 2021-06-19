@@ -34,7 +34,8 @@
 ▶ 버전 0.5 : 최초 홈페이지 접속 시 이동 가능했던 메뉴 중 main page 추가. 해당 페이지에서는 Fitness Manager에서 제공할 수 있는 정보를 한눈에 볼 수 있도록 근성장의 3요소를 사진과 함께 추가하여 사용자가 직관적으로 이해할 수 있게 했고, CSS를 이용해 사진을 클릭하기 전에 Transform 효과를 추가함.
 
 ### Source code
-###### 메인 : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/fitmanager.html
+###### 메인 : https://junhyeong-b.github.io/fitmanager.html
+###### FITNESS MANAGER : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/fitmanager.html
 ###### Workout Information : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/workoutinfo.html
 ###### Workout Log : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/workoutlog.html
 ###### Workout Log - Today workout List : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/logtodo.html
