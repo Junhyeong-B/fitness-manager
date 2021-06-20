@@ -99,19 +99,19 @@ a {
 }
 
 .main .training {
-    background: url("images/training.jpg") no-repeat center;
+    background: url("images/training.JPG") no-repeat center;
     background-size: cover;
     transition: all 300ms ease-in-out;
 }
 
 .main .healthy {
-    background: url("images/healthy.jpg") no-repeat center;
+    background: url("images/healthy.JPG") no-repeat center;
     background-size: cover;
     transition: all 300ms ease-in-out;
 }
 
 .main .stretching {
-    background: url("images/stretching.jpg") no-repeat center;
+    background: url("images/stretching.JPG") no-repeat center;
     background-size: cover;
     transition: all 300ms ease-in-out;
 }
