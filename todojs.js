@@ -116,7 +116,7 @@ function getWorkSelect(event) {
 }
 //Radio
 for (let i = 0 ; i < checkRadio.length; i++) {
-        checkRadio[i].addEventListener('change', getWorkSelect) ; 
+    checkRadio[i].addEventListener('change', getWorkSelect) ; 
 }
 //Set 선택 Select
 for (let i = 0 ; i < setSelect.length; i++) {
@@ -126,3 +126,62 @@ for (let i = 0 ; i < setSelect.length; i++) {
 for (let i = 0 ; i < weiSelect.length; i++) {
     weiSelect[i].addEventListener('change', getWorkSelect) ; 
 }
+
+//Select 선택 시 해당되는 부위 운동 나타나게
+const chestradio = document.querySelector(".chestRadio");
+const backradio = document.querySelector(".backRadio");
+const legradio = document.querySelector(".legRadio");
+const shoulderradio = document.querySelector(".shoulderRadio");
+const armradio = document.querySelector(".armRadio");
+const worksel = document.getElementsByName("work");
+
+function getMuscle(event) {
+    switch (event.target.value) {
+        case "chest":
+            chestradio.style.display = "block";
+            backradio.style.display = "none";
+            legradio.style.display = "none";
+            shoulderradio.style.display = "none";
+            armradio.style.display = "none";
+            break;
+        case "back":
+            chestradio.style.display = "none";
+            backradio.style.display = "block";
+            legradio.style.display = "none";
+            shoulderradio.style.display = "none";
+            armradio.style.display = "none";
+            break;
+        case "leg":
+            chestradio.style.display = "none";
+            backradio.style.display = "none";
+            legradio.style.display = "block";
+            shoulderradio.style.display = "none";
+            armradio.style.display = "none";
+            break;
+        case "shoulder":
+            chestradio.style.display = "none";
+            backradio.style.display = "none";
+            legradio.style.display = "none";
+            shoulderradio.style.display = "block";
+            armradio.style.display = "none";
+            break;
+        case "arm":
+            chestradio.style.display = "none";
+            backradio.style.display = "none";
+            legradio.style.display = "none";
+            shoulderradio.style.display = "none";
+            armradio.style.display = "block";
+            break;
+        default:
+            chestradio.style.display = "none";
+            backradio.style.display = "none";
+            legradio.style.display = "none";
+            shoulderradio.style.display = "none";
+            armradio.style.display = "none";
+            break;                                                               
+    }
+};
+
+for (let i = 0 ; i < worksel.length; i++) {
+    worksel[i].addEventListener('change', getMuscle) ; 
+};

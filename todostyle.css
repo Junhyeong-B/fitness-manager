@@ -229,7 +229,11 @@ h2 {
     background-color: var(--accent-color);
 }
 
-.chestRadio input {
+.chestRadio input,
+.backRadio input,
+.legRadio input,
+.shoulderRadio input,
+.armRadio input {
     font-size: 1rem;
     border: none;
     padding: 1rem;
@@ -240,6 +244,17 @@ h2 {
     text-align: center;
 }
 
+.chestRadio,
+.backRadio,
+.legRadio,
+.shoulderRadio,
+.armRadio {
+    display: none;
+}
+
+.workoutSelect {
+    width: 55vw;
+}
 
 .workoutSelect select {
     -webkit-appearance: none;
@@ -260,6 +275,7 @@ h2 {
     display: inline;
     margin: auto;
 }
+
 
 .setSelect::after {
     content: "\25BC";
