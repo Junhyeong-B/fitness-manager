@@ -137,7 +137,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center ;
-    width: 300px;
+    width: 50vw;
     transition: all 300ms ease-in-out;
 }
 
@@ -181,7 +181,7 @@ h2 {
 }
 
 .ul__list .fall {
-    transform: translateY(4rem) rotateZ(20deg);
+    transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
 }
 
@@ -344,4 +344,112 @@ h2 {
 form,
 form .resetInput {
     font-family: 'Jua', sans-serif;
+}
+
+input.resetInput {
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 766px){
+    form {
+        width: 90%;
+    }
+
+    .time {
+        width: 70%;
+        margin-top: 15px;
+        font-size: 25PX;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    .bodySelect h3 {
+        margin: 10px 0 10px 0;
+    }
+
+    select.workSel,
+    select.setSelect,
+    select.weiSelect {
+        width: 50%;
+        padding: 10px;
+        font-size: 15px;
+        margin: 10px 0;
+    }
+
+    .workoutSelect {
+        width: 100%;
+    }
+
+    .bodySelect::after,
+    .weightSelect::after,
+    .setSelect::after {
+        top: -1px;
+        right: 40px;
+        padding: 0.65rem;
+        pointer-events: none;
+        color: var(--accent-color);
+        background-color: #f4f3ee;
+        transition: all 300ms ease;
+    }
+
+        .chestRadio input,
+        .backRadio input,
+        .legRadio input,
+        .shoulderRadio input,
+        .armRadio input {
+            padding: 0.5rem;
+            height: 1rem;
+            width: 0.9rem;
+            font-size: 1rem;
+            margin: 0.4rem;
+    }
+
+    input.resetInput {
+        margin-left: 0;
+    }
+    input.list__input {
+        margin-top: 65px;
+        width: 85%;
+    }
+
+    select.filter__list {
+        position: relative;
+        top: -115px;
+        left: 120px;
+        background-color: #f8edeb;
+        color: #264653;
+        border-radius: 10px;
+    }
+
+    div.select {
+        position: relative;
+    }
+
+    input.resetInput {
+        position: relative;
+        right: 50%;
+        top: 55px;
+    }
+
+    .select::after {
+        display: none;
+    }
+
+    .doList {
+        margin: 0.5rem;
+        background: #f4f3ee;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center ;
+        width: 80vw;
+        transition: all 300ms ease-in-out;
+    }
+
+    .doList .list__workout {
+        font-size: 0.9rem;
+    }
 }

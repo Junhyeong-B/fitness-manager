@@ -52,13 +52,20 @@ init();
 // Complete, Delete 기능
 const completebtn = document.querySelector('.completed__btn');
 const deletebtn = document.querySelector('.delete__btn');
-
+const buttonI = document.getElementsByTagName('i');
 
 ulList.addEventListener('click', checked);
 
 function checked(e) {
     const item = e.target;
 
+    if(item.classList[1] === 'fa-trash') {
+        const list = item.parentElement.parentElement;
+        list.classList.add("fall");
+        list.addEventListener('transitionend', function(){
+            list.remove();
+        });
+    }
     if(item.classList[0] === 'delete__btn') {
         const list = item.parentElement;
         list.classList.add("fall");
@@ -67,6 +74,10 @@ function checked(e) {
         });
     }
 
+    if(item.classList[1] === 'fa-check') {
+        const list = item.parentElement.parentElement;
+        list.classList.toggle('completed');
+    }
     if(item.classList[0] === 'completed__btn') {
         const list = item.parentElement;
         list.classList.toggle('completed');
@@ -112,7 +123,9 @@ const weiSelect = document.getElementsByName('wei');
 
 
 function getWorkSelect(event) {
-    workoutList.value += event.target.value;
+    if (event.target.value !== "not") {
+        workoutList.value += event.target.value;
+    }
 }
 //Radio
 for (let i = 0 ; i < checkRadio.length; i++) {
