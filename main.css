@@ -87,7 +87,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 .main .healthy,
@@ -180,4 +180,49 @@ a {
 .main .healthy:hover .healthyText,
 .main .stretching:hover .stretchText {
     opacity: 1;
+}
+
+@media screen and (max-width: 780px){
+    h1 {
+        margin-bottom: 0;
+    }
+        
+    .main .healthy,
+    .main .training,
+    .main .stretching {
+        width: 30%;
+        height: 80%;
+        margin: 5px;
+    }
+    
+    .main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 40vh;
+    }
+
+        
+    .main .training:hover,
+    .main .healthy:hover,
+    .main .stretching:hover { 
+        transform: scale(1.05) translateY(-15px);
+    }
+
+    .main .training .trainText,
+    .main .healthy .healthyText,
+    .main .stretching .stretchText {
+        font-size: 1.1rem;
+    }
+
+    .main .training .trainText:hover a {
+        color: #0f4c5c;
+    }
+    .main .healthy .healthyText:hover a{
+        color: #ff6b6b;
+    }
+    .main .stretching .stretchText:hover a {
+        color: #f7b801;
+    }
+
 }

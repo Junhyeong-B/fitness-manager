@@ -118,3 +118,44 @@ a {
 
 }
 
+@media screen and (max-width: 780px){
+    .main .diary,
+    .main .plus,
+    .main .todayLog  {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        background-size: 70%;
+        overflow: hidden;
+    }
+
+    .diary,
+    .todayLog,
+    .plus {
+        background: none;
+    }
+
+    .main h1 {
+        padding: 10px;
+        top: 0px;
+        font-size: 25px;
+        width: 200px;
+        height: 200px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+    
+    .main .diary:hover h1,
+    .main .plus:hover h1,
+    .main .todayLog:hover h1 {
+        transform: translateY(-00px);
+    }
+
+        
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+
+}
