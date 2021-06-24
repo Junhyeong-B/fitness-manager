@@ -51,6 +51,7 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
  * 버전 0.5.1.1 : 당일 운동 계획 페이지를 mobile 화면(작은 화면)으로 접속했을 때 크기나 위치가 어긋나 media query 를 이용하여 위치 조정.
  * 버전 0.5.2 : workout information 페이지에 가슴 운동 항목을 추가. 변수 명 first, second 등으로 변경
  * 버전 0.5.2.1 : workout information 등 운동 페이지 추가.
+ * 버전 0.5.2.2 : my own workout log 페이지, main menu 페이지를 작은 화면(모바일)으로 접속했을 때 이용이 적합하도록 크기 및 배치 조절.
 <p align="center"><img src="https://user-images.githubusercontent.com/85148549/122868231-a64aa700-d365-11eb-90d4-a449284926ec.JPG" height="300px">
 
 ### Source code
