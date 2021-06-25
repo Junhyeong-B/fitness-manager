@@ -1,0 +1,129 @@
+:root {
+    --text-color: rgb(228, 231, 231);
+    --background-color: rgba(94, 94, 94, 0.9);
+    --accent-color: rgb(255, 192, 74);
+    --toggle-color: rgba(0, 0, 0, 0.6);
+}
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: #fffcf2;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.main__head {
+    color: var(--text-color);
+    padding: 8px 12px;
+    font-size: 24px;
+}
+
+.main__head i {
+    color: var(--accent-color);
+}
+
+.main__links ul{
+    margin: 0;
+}
+
+.main__links ul li{
+    list-style: none;
+    font-size: 18px;
+    display: inline-block;
+    margin: 15px;
+}
+
+.main__links ul li:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px var(--text-color);  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+}
+
+.main__links ul li:hover:after {
+    transform: scaleX(1);
+}
+
+.main {
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+}
+
+.main span {
+    color: #ff595e;
+    font-size: 20px;
+}
+
+.contents {
+    display: flex;
+    flex-flow: column;
+}
+
+.first__img,
+.second__img,
+.third__img {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.first__img {
+    background: url(images/why.JPG) no-repeat center;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 5px;
+}
+
+.second__img {
+    background: url(images/dynamic.JPG) no-repeat center;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 5px;
+    float: right;
+}
+
+.third__img {
+    background: url(images/static.JPG) no-repeat center;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 5px;
+}
+
+.second__contents {
+    position: absolute;
+    height: 400px;
+    width: 70vw;
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 5px;
+    margin: 20px;
+    line-height: 400px;
+    float: right;
+    text-align: center;
+}
+
+.first__contents,
+.third__contents {
+    display: inline-block;
+    position: absolute;
+    height: 400px;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 5px;
+    margin: 20px;
+    line-height: 400px;
+    text-align: center;
+}
+
