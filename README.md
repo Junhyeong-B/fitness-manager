@@ -52,8 +52,15 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
  * 버전 0.5.2 : workout information 페이지에 가슴 운동 항목을 추가. 변수 명 first, second 등으로 변경
  * 버전 0.5.2.1 : workout information 등 운동 페이지 추가.
  * 버전 0.5.2.2 : my own workout log 페이지, main menu 페이지를 작은 화면(모바일)으로 접속했을 때 이용이 적합하도록 크기 및 배치 조절.
- * 버전 0.5.2.3 : main 페이지에서 stretching 클릭했을 때 이동할 수 있는 스트레칭 정보 페이지 추가. 스트레칭 종류, 해야하는 방법 등 정보를 제공.(내용 및 영상 내용 추가 예정)
 <p align="center"><img src="https://user-images.githubusercontent.com/85148549/122868231-a64aa700-d365-11eb-90d4-a449284926ec.JPG" height="300px">
+  
+ * 버전 0.5.2.3 : main 페이지에서 stretching 클릭했을 때 이동할 수 있는 스트레칭 정보 페이지 추가. 스트레칭 종류, 해야하는 방법 등 정보를 제공.(내용 및 영상 내용 추가 예정)
+ * 버전 0.5.3 : stretching 페이지 접속 시 keyframes, animation을 이용해 순서대로 내용이 나타나는 기능을 추가했고, 아래에 사진들을 이용해 각 스트레칭의 차이 및 정보를 알 수 있게 추가. → 해당 내용은 사용자가 한가지 정보에 집중할 수 있게 slide 되는 효과를 이용하여 한가지만 나타나게 함.
+<p align="center"><img src="https://user-images.githubusercontent.com/85148549/123504717-cba52100-d695-11eb-9d12-7654312b911a.JPG" height="200px">
+<img src="https://user-images.githubusercontent.com/85148549/123504718-ce077b00-d695-11eb-8595-e181af5982ed.JPG" height="200px">
+<img src="https://user-images.githubusercontent.com/85148549/123504719-cea01180-d695-11eb-928d-7409c1d66898.JPG" height="200px"></p>
+<p align="center">[사이트에 접속했을 때 순서대로 글씨 표시 / 사이트가 모두 Load 되었을 때 / 화살표 label을 클릭했을 때 sliding]</p>
+
 
 ### Source code
 ###### 메인 : https://junhyeong-b.github.io/fitmanager.html
@@ -67,3 +74,4 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
 ###### Workout Log - Today workout List : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/logtodo.html
 
 ###### Main : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/main.html
+###### Main - Stretching : https://github.com/Junhyeong-B/Junhyeong-B.github.io/blob/main/stretching.html
