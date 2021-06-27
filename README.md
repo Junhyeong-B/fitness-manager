@@ -42,7 +42,7 @@
  * 버전 0.4.3.3 : Set 수, 무게(kg)을 간단하게 설정할 수 있는 Select를 만들었고, 해당 Select를 설정하면 Input Text값에 자동으로 입력되게 기능 추가함, 초기화 버튼을 생성하여 입력한 내용을 모두 지울 수 있도록 설정, CSS를 수정해서 좀 더 보기 좋은 색상, 모양으로 변경.
 <p align="center"><img src="https://user-images.githubusercontent.com/85148549/122866487-fc6a1b00-d362-11eb-8e73-e9764068579d.JPG" height="300px">
 <img src="https://user-images.githubusercontent.com/85148549/122866433-e4929700-d362-11eb-9f22-c638922f87de.JPG" height="300px"></p>
-<p align="center">[Workout Log 페이지 / Workout Log 당일 운동 계획 페이지]</p>!
+<p align="center">[Workout Log 페이지 / Workout Log 당일 운동 계획 페이지]</p>
 
 
 ▶ 버전 0.5 : 최초 홈페이지 접속 시 이동 가능했던 메뉴 중 main page 추가. 해당 페이지에서는 Fitness Manager에서 제공할 수 있는 정보를 한눈에 볼 수 있도록 근성장의 3요소를 사진과 함께 추가하여 사용자가 직관적으로 이해할 수 있게 했고, CSS를 이용해 사진을 클릭하기 전에 Transform 효과를 추가함.
