@@ -61,6 +61,8 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
 <img src="https://user-images.githubusercontent.com/85148549/123504719-cea01180-d695-11eb-928d-7409c1d66898.JPG" height="200px"></p>
 <p align="center">[사이트에 접속했을 때 순서대로 글씨 표시 / 사이트가 모두 Load 되었을 때 / 화살표 label을 클릭했을 때 sliding]</p>
 
+ * 버전 0.5.3.1 : stretching 화면에서 첫 번째로 보이는 ? 이미지를 클릭했을 때 동적 스트레칭의 중요성에 대한 영상과 내용들이 modal Popup 형태로 나타나게 함.
+
 
 ### Source code
 ###### 메인 : https://junhyeong-b.github.io/fitmanager.html
