@@ -171,7 +171,9 @@ label.left:hover {
 [id="slide02"]:checked ~ .slidelist .slideitem {transform: translateX(-100%);}
 [id="slide03"]:checked ~ .slidelist .slideitem {transform: translateX(-200%);}
 
-.modal__first {
+.modal__first,
+.modal__second,
+.modal__third {
     display: inline-block;
     position: fixed;
     top: 0;
@@ -183,7 +185,9 @@ label.left:hover {
     transition: 400ms ease-in-out;
 }
 
-.modal__first .modal {
+.modal__first .modal,
+.modal__second .modal,
+.modal__third .modal {
     display: inline-block;
     position: absolute;
     padding: 10px 20px 30px 20px;
@@ -199,7 +203,9 @@ label.left:hover {
     transition: 300ms ease-in-out;
 }
 
-.modal__first.active .modal {
+.modal__first.active .modal,
+.modal__second.active .modal,
+.modal__third.active .modal {
     opacity: 1;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -207,7 +213,9 @@ label.left:hover {
 
 }
 
-.modal__first.active {
+.modal__first.active,
+.modal__second.active,
+.modal__third.active {
     visibility: visible;
 }
 
