@@ -1,5 +1,5 @@
 // 첫 번째 모달 창
-const openModal1 = document.querySelector(".first__img")
+const openModal1 = document.querySelector(".first__content")
 const closeModal1 = document.querySelector(".close__modal1");
 
 openModal1.addEventListener("click", () => {
@@ -11,7 +11,7 @@ closeModal1.addEventListener("click", () => {
 });
 
 // 두 번째 모달 창
-const openModal2 = document.querySelector(".second__img")
+const openModal2 = document.querySelector(".second__content")
 const closeModal2 = document.querySelector(".close__modal2");
 
 openModal2.addEventListener("click", () => {
@@ -24,7 +24,7 @@ closeModal2.addEventListener("click", () => {
 
 
 // 세 번째 모달 창
-const openModal3 = document.querySelector(".third__img")
+const openModal3 = document.querySelector(".third__content")
 const closeModal3 = document.querySelector(".close__modal3");
 
 openModal3.addEventListener("click", () => {
