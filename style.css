@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Oswald', sans-serif;
-    background: url('images/backSquat.jpg') no-repeat center;
+    background: url('./images/backSquat.jpg') no-repeat center;
     background-size: cover;
 }
 
