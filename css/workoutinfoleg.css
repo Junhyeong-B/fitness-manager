@@ -157,21 +157,21 @@ a {
 }
 
 .firstWorkout {
-    background: url("images/backSquat2.jpg") no-repeat center;
+    background: url("../images/backSquat2.jpg") no-repeat center;
     background-size: contain;
     overflow: hidden;
     border-radius: 8px;
 }
 
 .secondWorkout {
-    background: url("images/lunge.jpg") no-repeat center;
+    background: url("../images/lunge.jpg") no-repeat center;
     background-size: contain;
     overflow: hidden;
     border-radius: 8px;
 }
 
 .thirdWorkout {
-    background: url("images/legPress.jpg") no-repeat center;
+    background: url("../images/legPress.jpg") no-repeat center;
     background-size: contain;
     overflow: hidden;
     border-radius: 8px;
