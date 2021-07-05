@@ -147,21 +147,21 @@ a {
 }
 
 .benchPress {
-    background: url("images/benchPress.JPG") no-repeat center;
+    background: url("../images/benchPress.JPG") no-repeat center;
     background-size: contain;
     overflow: hidden;
     border-radius: 8px;
 }
 
 .deadLift {
-    background: url("images/deadLift.JPG") no-repeat center;
+    background: url("../images/deadLift.JPG") no-repeat center;
     background-size: contain;
     overflow: hidden;
     border-radius: 8px;
 }
 
 .squat {
-    background: url("images/squat.JPG") no-repeat center;
+    background: url("../images/squat.JPG") no-repeat center;
     background-size: contain;
     overflow: hidden;
     border-radius: 8px;
@@ -353,7 +353,7 @@ a {
     width: 30px;
 }
 
-@media screen and (max-width: 776px){
+@media screen and (max-width: 965px){
     .main__head .workout__angledown i,
     .main__head .workout__angleup i {
         display: block;
