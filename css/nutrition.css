@@ -89,7 +89,7 @@ ul {
 }
 
 .main .diet1 {
-    background-image: url("./images/weightLoss.JPG");
+    background-image: url("../images/weightLoss.JPG");
     background-color: #f5f5f5;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -97,7 +97,7 @@ ul {
 }
 
 .main .diet2 {
-    background: url("./images/gainWeight.JPG");
+    background: url("../images/gainWeight.JPG");
     background-color: #f5f5f5;
     background-repeat: no-repeat;
     background-position: bottom;
