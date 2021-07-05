@@ -156,21 +156,21 @@ a {
 }
 
 .firstWorkout {
-    background: url("images/latPullDown.JPG") no-repeat center;
+    background: url("../images/latPullDown.JPG") no-repeat center;
     background-size: contain;
     overflow: hidden;
     border-radius: 8px;
 }
 
 .secondWorkout {
-    background: url("images/pullUps.JPG") no-repeat center;
+    background: url("../images/pullUps.JPG") no-repeat center;
     background-size: contain;
     overflow: hidden;
     border-radius: 8px;
 }
 
 .thirdWorkout {
-    background: url("images/barbellRow.JPG") no-repeat center;
+    background: url("../images/barbellRow.JPG") no-repeat center;
     background-size: contain;
     overflow: hidden;
     border-radius: 8px;
