@@ -72,15 +72,15 @@ a {
 }
 
 .diary {
-    background: url(images/diary.png) no-repeat center #ffadad;
+    background: url("../images/diary.png") no-repeat center #ffadad;
 }
 
 .todayLog {
-    background: url(images/list.png) no-repeat center #ffd6a5;
+    background: url("../images/list.png") no-repeat center #ffd6a5;
 }
 
 .plus {
-    background: url(images/plus.png) no-repeat center #fdffb6;
+    background: url("../images/plus.png") no-repeat center #fdffb6;
 }
 
 .main h1 {
