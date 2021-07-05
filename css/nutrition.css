@@ -89,7 +89,7 @@ ul {
 }
 
 .main .diet1 {
-    background-image: url("../images/weightLoss.jpg");
+    background-image: url("../images/weightLoss.JPG");
     background-color: #f5f5f5;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -97,7 +97,7 @@ ul {
 }
 
 .main .diet2 {
-    background: url("../images/gainWeight.jpg");
+    background: url("../images/gainWeight.JPG");
     background-color: #f5f5f5;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -147,14 +147,15 @@ ul {
 
 .hidden {
     display: none;
-    opacity: 0;
 }
 
 .lose,
 .gain {
     justify-content: center;
+    text-align: center;
     transform: translateY(-30px);
     transition: 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 0;
 }
 
 .contentLose,
@@ -165,6 +166,7 @@ ul {
     width: 60vw;
     padding: 5px 20px;
     text-align: center;
+    margin: 10px;
 }
 
 .lose.active,
