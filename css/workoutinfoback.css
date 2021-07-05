@@ -375,7 +375,7 @@ a {
     width: 30px;
 }
 
-@media screen and (max-width: 776px){
+@media screen and (max-width: 965px){
     .main__head .workout__angledown i,
     .main__head .workout__angleup i {
         display: block;
