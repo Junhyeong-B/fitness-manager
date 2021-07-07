@@ -57,8 +57,10 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
  * 버전 0.5.2.3 : main 페이지에서 stretching 클릭했을 때 이동할 수 있는 스트레칭 정보 페이지 추가. 스트레칭 종류, 해야하는 방법 등 정보를 제공.(내용 및 영상 내용 추가 예정)
  * 버전 0.5.3 : stretching 페이지 접속 시 keyframes, animation을 이용해 순서대로 내용이 나타나는 기능을 추가했고, 아래에 사진들을 이용해 각 스트레칭의 차이 및 정보를 알 수 있게 추가. → 해당 내용은 사용자가 한가지 정보에 집중할 수 있게 slide 되는 효과를 이용하여 한가지만 나타나게 함.
 <p align="center"><img src="https://user-images.githubusercontent.com/85148549/123504717-cba52100-d695-11eb-9d12-7654312b911a.JPG" height="200px">
-<img src="https://user-images.githubusercontent.com/85148549/123504718-ce077b00-d695-11eb-8595-e181af5982ed.JPG" height="200px">
-<img src="https://user-images.githubusercontent.com/85148549/123504719-cea01180-d695-11eb-928d-7409c1d66898.JPG" height="200px"></p>
+<img src="https://user-images.githubusercontent.com/85148549/124704420-0416eb80-df2f-11eb-8757-1101c61e6c01.JPG" height="200px">
+<img src="https://user-images.githubusercontent.com/85148549/124704465-155ff800-df2f-11eb-91b8-baae3929f0c0.JPG" height="200px"></p>
+
+
 <p align="center">[사이트에 접속했을 때 순서대로 글씨 표시 / 사이트가 모두 Load 되었을 때 / 화살표 label을 클릭했을 때 sliding]</p>
 
  * 버전 0.5.3.1 : stretching 화면에서 첫 번째로 보이는 ? 이미지를 클릭했을 때 동적 스트레칭의 중요성에 대한 영상과 내용들이 modal Popup 형태로 나타나게 함.
