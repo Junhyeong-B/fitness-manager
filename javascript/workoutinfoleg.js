@@ -78,9 +78,9 @@ angleUp.addEventListener('click', angle);
 // 776 px 미만일 때 운동정보 사이즈 조절
 const videoSize = document.querySelectorAll('iframe');
 const modalSize = document.querySelectorAll('ol');
-const benchSize = document.querySelector('.bench__Modal');
-const deadSize = document.querySelector('.dead__Modal');
-const squatSize = document.querySelector('.squat__Modal');
+const benchSize = document.querySelector('.firstModal');
+const deadSize = document.querySelector('.secondModal');
+const squatSize = document.querySelector('.thirdModal');
 
 const mediaQuery = window.matchMedia("(max-width: 776px)");
 
