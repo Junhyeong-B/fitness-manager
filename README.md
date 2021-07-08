@@ -72,6 +72,7 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
  * 버전 0.5.4.3 : nutrition 페이지에서 체중 감량, 체중 증량 박스를 클릭하면 해당 컨텐츠가 나타나도록 기능 추가.
  * 버전 0.5.4.4 : stretching 페이지 media query를 이용해 모바일 화면에 최적화.
  * 버전 0.5.4.5 : shoulder workout 페이지 추가, nutrition page에서 영양 정보에 transform 효과 추가되도록 javascript 수정.
+ * 버전 0.5.4.6 : Main Page에서 접속할 수 있는 Training Page 추가(컨텐츠 없는 초기 단계), Main Page 접속 시 애니메이션 추가하여 동적 로딩 효과 추가.
 
 
 ### Source code
