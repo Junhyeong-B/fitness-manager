@@ -59,8 +59,6 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
 <p align="center"><img src="https://user-images.githubusercontent.com/85148549/123504717-cba52100-d695-11eb-9d12-7654312b911a.JPG" height="200px">
 <img src="https://user-images.githubusercontent.com/85148549/124704420-0416eb80-df2f-11eb-8757-1101c61e6c01.JPG" height="200px">
 <img src="https://user-images.githubusercontent.com/85148549/124704465-155ff800-df2f-11eb-91b8-baae3929f0c0.JPG" height="200px"></p>
-
-
 <p align="center">[사이트에 접속했을 때 순서대로 글씨 표시 / 사이트가 모두 Load 되었을 때 / 화살표 label을 클릭했을 때 sliding]</p>
 
  * 버전 0.5.3.1 : stretching 화면에서 첫 번째로 보이는 ? 이미지를 클릭했을 때 동적 스트레칭의 중요성에 대한 영상과 내용들이 modal Popup 형태로 나타나게 함.
@@ -73,7 +71,9 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
  * 버전 0.5.4.4 : stretching 페이지 media query를 이용해 모바일 화면에 최적화.
  * 버전 0.5.4.5 : shoulder workout 페이지 추가, nutrition page에서 영양 정보에 transform 효과 추가되도록 javascript 수정.
  * 버전 0.5.4.6 : Main Page에서 접속할 수 있는 Training Page 추가(컨텐츠 없는 초기 단계), Main Page 접속 시 애니메이션 추가하여 동적 로딩 효과 추가.
-
+ * 버전 0.5.4.7 : Training 페이지에 Main 내용 추가 및 왼쪽의 글씨 클릭 시 해당 내용 표시되도록 추가(내용 업데이트 예정)
+<p align="center"><img src="https://user-images.githubusercontent.com/85148549/125027162-c944bd00-e0c0-11eb-962e-4a6a72661653.JPG" height="300px">
+<p align="center">[Training 페이지]
 
 ### Source code
 ###### 사이트 이동(메인) : https://junhyeong-b.github.io/html/fitmanager.html
