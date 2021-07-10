@@ -72,6 +72,7 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
  * 버전 0.5.4.5 : shoulder workout 페이지 추가, nutrition page에서 영양 정보에 transform 효과 추가되도록 javascript 수정.
  * 버전 0.5.4.6 : Main Page에서 접속할 수 있는 Training Page 추가(컨텐츠 없는 초기 단계), Main Page 접속 시 애니메이션 추가하여 동적 로딩 효과 추가.
  * 버전 0.5.4.7 : Training 페이지에 Main 내용 추가 및 왼쪽의 글씨 클릭 시 해당 내용 표시되도록 추가(내용 업데이트 예정)
+ * 버전 0.5.4.8 : Training Page 내용 추가, Animation 추가하여 로딩 후 동작.
 <p align="center"><img src="https://user-images.githubusercontent.com/85148549/125027162-c944bd00-e0c0-11eb-962e-4a6a72661653.JPG" height="300px">
 <p align="center">[Training 페이지]
 
