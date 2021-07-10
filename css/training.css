@@ -97,3 +97,20 @@ section .content .hidden {
     display: none;
     opacity: 0;
 }
+
+.menu, .content {
+    animation: fadeInAnimation ease 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+     }
+}
