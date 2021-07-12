@@ -107,6 +107,7 @@ section .content .hidden {
 .menu, .content {
     animation: fadeInAnimation ease 1s;
     animation-fill-mode: forwards;
+    text-indent: 10px;
     opacity: 0;
 }
 
