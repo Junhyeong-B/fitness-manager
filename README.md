@@ -77,6 +77,12 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
  
  * 버전 0.5.4.8 : Training Page 내용(Content) 추가, Animation 추가하여 로딩 후 동작.
  * 버전 0.5.4.9 : Training Page 창 크기에 맞게 중앙에 Content 표시되도록 수정, Media Query를 추가하여 모바일 화면 최적화.
+ * 버전 0.5.5 : My Own Workout Log 페이지에 표현한 색이 복잡하고 어울리지 않아 전체적으로 모노톤으로 수정, 추가로 해당 페이지가 이미지만 나타나있어 설명란 추가.
+ <p align="center"><img src="https://user-images.githubusercontent.com/85148549/122866487-fc6a1b00-d362-11eb-8e73-e9764068579d.JPG" height="250px"> →
+ <img src="https://user-images.githubusercontent.com/85148549/125254141-2648a900-e335-11eb-8e31-3deb8234759a.JPG" height="250px">
+  <p align="center">[기존 Workout Log 페이지 / 수정 후 Workout Log 페이지]</p>
+  
+
 
 ### Source code
 ###### 사이트 이동(메인) : https://junhyeong-b.github.io/html/fitmanager.html
