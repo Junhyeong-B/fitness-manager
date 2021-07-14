@@ -63,8 +63,7 @@ a {
 
 .main .diary,
 .main .plus,
-.main .today  {
-    /* overflow: hidden; */
+.main .today {
     margin: 10px 30px;
 }
 
@@ -72,7 +71,7 @@ a {
 .today,
 .diary {
     width: 300px;
-    height: 350px;
+    height: 330px;
     background-color: #f5f5f5;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
     cursor: pointer;
@@ -80,7 +79,6 @@ a {
     border-radius: 10px;
     transition: 300ms ease-in-out;
 }
-
 
 .plus:hover,
 .today:hover,
@@ -107,81 +105,6 @@ a {
     line-height: 0.5em;
 }
 
-.main h1 {
-    font-family: 'Black Han Sans', sans-serif;
-    text-align: left;
-    vertical-align: middle;
-    color: rgb(255, 255, 255);
-    margin: 0;
-    padding: 20px;
-    position: relative;
-    top: 280px;
-    font-size: 30px;
-    width: 300px;
-    height: 300px;
-    transition: 300ms ease-in-out;
-    font-weight: 500;
-}
-
-.main .plus h1 {
-    background-color: #ffadad;
-}
-
-.main .diary h1 {
-    background-color: #ffd6a5;
-}
-
-.main .todayLog h1 {
-    background-color: #a0c4ff;
-}
-
-.main .diary:hover h1,
-.main .plus:hover h1,
-.main .today:hover h1 {
-    transform: translateY(-280px);
-
-}
-
-/* @media screen and (max-width: 780px){
-    .main .diary,
-    .main .plus,
-    .main .today  {
-        width: 200px;
-        height: 200px;
-        margin: 20px;
-        background-size: 70%;
-        overflow: hidden;
-    }
-
-    .diary,
-    .today,
-    .plus {
-        background: none;
-    }
-
-    .main h1 {
-        padding: 10px;
-        top: 0px;
-        font-size: 25px;
-        width: 200px;
-        height: 200px;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-        }
-    
-    .main .diary:hover h1,
-    .main .plus:hover h1,
-    .main .today:hover h1 {
-        transform: translateY(-00px);
-    }
-
-    .main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 70vh;
-    }
-} */
-
 .services {
     width: 80vw;
     margin: 30px auto;
@@ -195,4 +118,28 @@ a {
 
 .services section p {
     text-align: center;
+}
+
+@media screen and (max-width: 765px){
+    .main {
+        margin: 0;
+    }
+
+    .plus,
+    .today,
+    .diary {
+        width: 180px;
+        height: 210px;
+    }
+
+    .plus i,
+    .today i,
+    .diary i {
+        margin-top: 50px;
+        font-size: 3em;
+    }
+
+    .main h2 {
+        font-size: 1.5em;
+    }
 }
