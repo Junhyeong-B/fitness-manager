@@ -83,6 +83,8 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
  <img src="https://user-images.githubusercontent.com/85148549/125311659-8740a300-e36e-11eb-9f0c-78c216308ee4.JPG" height="250px">
   <p align="center">[기존 Workout Log 페이지 / 수정 후 Workout Log 페이지]</p>
   
+ * 버전 0.5.5.2 : Workout Log 페이지에 불필요한 html 내용 삭제, Media Query를 이용하여 모바일 화면 최적화.
+  
 
 
 ### Source code
