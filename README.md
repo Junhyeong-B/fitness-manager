@@ -84,6 +84,7 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
   <p align="center">[기존 Workout Log 페이지 / 수정 후 Workout Log 페이지]</p>
   
  * 버전 0.5.5.2 : Workout Log 페이지에 불필요한 html 내용 삭제, Media Query를 이용하여 모바일 화면 최적화.
+ * 버전 0.5.5.3 : Fitness Manager 첫 메인 페이지가 메뉴 이동 링크만 있어 페이지 전체적으로 수정, 이후 아래로 스크롤하면 Fitness Manager에 대한 정보가 나타나도록 컨텐츠 추가 예정
   
 
 
