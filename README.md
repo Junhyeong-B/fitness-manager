@@ -85,6 +85,12 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
   
  * 버전 0.5.5.2 : Workout Log 페이지에 불필요한 html 내용 삭제, Media Query를 이용하여 모바일 화면 최적화.
  * 버전 0.5.5.3 : Fitness Manager 첫 메인 페이지가 메뉴 이동 링크만 있어 페이지 전체적으로 수정, 이후 아래로 스크롤하면 Fitness Manager에 대한 정보가 나타나도록 컨텐츠 추가 예정
+ * 버전 0.5.5.4 : 첫 화면에서 스크롤 했을 때 변형 효과 추가 및 타 페이지에서 첫 화면으로 돌아갈 수 있도록 전 html 문서 수정
+<p align="center"><img src="https://user-images.githubusercontent.com/85148549/122865604-a0eb5d80-d361-11eb-841f-49db9e7d5cb8.JPG" height="200px"> → 
+ <img src="https://user-images.githubusercontent.com/85148549/125893797-99660368-c08f-4729-8343-5b7e4655e36f.JPG" height="200px"> → 
+ <img src="https://user-images.githubusercontent.com/85148549/125893804-e28809a3-1039-4611-8401-02d7cfee4971.JPG" height="200px">
+<p align="center">[최초 첫 화면 / 수정 후 첫 화면 / Scroll 했을 때 화면]
+
   
 
 
