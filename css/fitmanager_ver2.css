@@ -78,7 +78,7 @@ header .logo {
 }
 
 header .logo i {
-    color: rgb(255, 192, 74);
+    color: #ffc04a;
 }
 
 header .navigation {
@@ -95,4 +95,25 @@ header .navigation li a {
     text-decoration: none;
     color: #fff;
     font-weight: 300;
+    transition: all 300ms;
+}
+
+body {
+    min-height: 1000px;
+}
+
+header.sticky {
+    background-color: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+header.sticky .logo,
+header.sticky .navigation li a {
+    color: #111;
+}
+
+header .navigation li a:hover {
+    color: #ff3c4c;
 }
