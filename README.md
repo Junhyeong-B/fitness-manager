@@ -90,9 +90,8 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
  <img src="https://user-images.githubusercontent.com/85148549/125893797-99660368-c08f-4729-8343-5b7e4655e36f.JPG" height="200px"> → 
  <img src="https://user-images.githubusercontent.com/85148549/125893804-e28809a3-1039-4611-8401-02d7cfee4971.JPG" height="200px">
 <p align="center">[최초 첫 화면 / 수정 후 첫 화면 / Scroll 했을 때 화면]
-
   
-
+ * 버전 0.5.6 : 해당 페이지 이용간 궁금한 사항에 대한 FAQ 사이트 제작
 
 ### Source code
 ###### 사이트 이동(메인) : https://junhyeong-b.github.io/html/fitmanager_ver2.html
