@@ -93,6 +93,7 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
   
  * 버전 0.5.6 : Fitness Manager 사이트 이용간 궁금한 사항에 대한 FAQ 사이트 제작
  * 버전 0.5.6.1 : FAQ 페이지에서 Answer 부분 들여쓰기 및 Answer부분은 안보이게 처리 후 Question 클릭 시 나타날 수 있도록 기능 추가, 전 html 문서 FAQ 페이지 이동 href 수정.
+ * 버전 0.5.6.2 : 상단에 위치한 메뉴 이동 시 현재 위치하고 있는 페이지가 표시되도록 수정.
 
 ### Source code
 ###### 사이트 이동(메인) : https://junhyeong-b.github.io/html/fitmanager_ver2.html
