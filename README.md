@@ -98,6 +98,7 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
  
  * 버전 0.5.6.2 : 상단에 위치한 메뉴 이동 시 현재 위치하고 있는 페이지가 표시되도록 수정.
  * 버전 0.5.6.3 : Stretching 페이지에서 Label을 이용한 CSS 슬라이드 에서 Javascript + Button 을 이용한 Slide로 수정(Stretching_ver2)하여 유지보수에 더 용이하게 변경(차후 Prev, Next 버튼 생성 및 Animation 효과 추가 예정)
+ * 버전 0.5.6.4 : Stretching 페이지 버튼 클릭 시 버튼에 해당 위치 표시 및 Animation 효과 추가.
 
 ### Source code
 ###### 사이트 이동(메인) : https://junhyeong-b.github.io/html/fitmanager_ver2.html
