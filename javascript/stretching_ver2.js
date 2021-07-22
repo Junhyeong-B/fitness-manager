@@ -36,16 +36,19 @@
 // });
 
 // Button Click 시 해당 버튼에 해당하는 이미지 표시
-const btn1 = document.querySelector(".btn1")
-const btn2 = document.querySelector(".btn2")
-const btn3 = document.querySelector(".btn3")
+const btn1 = document.querySelector(".btn1");
+const btn2 = document.querySelector(".btn2");
+const btn3 = document.querySelector(".btn3");
+const slides = document.querySelectorAll(".slides");
 const SHOWING_CLASS = "showing";
 
 btn1.addEventListener("click", () => {
     if (btn1.classList[1] !== SHOWING_CLASS) {
-        document.querySelector(".li2").classList.remove(SHOWING_CLASS);
-        document.querySelector(".li3").classList.remove(SHOWING_CLASS);
-        document.querySelector(".li1").classList.add(SHOWING_CLASS);
+        for (let x of slides) {
+            x.classList.remove("showing2");
+            x.classList.remove("showing3");
+            x.classList.add("showing1");
+        };
 
         btn2.classList.remove(SHOWING_CLASS);
         btn3.classList.remove(SHOWING_CLASS);
@@ -55,9 +58,11 @@ btn1.addEventListener("click", () => {
 
 btn2.addEventListener("click", () => {
     if (btn2.classList[1] !== SHOWING_CLASS) {
-        document.querySelector(".li1").classList.remove(SHOWING_CLASS);
-        document.querySelector(".li3").classList.remove(SHOWING_CLASS);
-        document.querySelector(".li2").classList.add(SHOWING_CLASS);
+        for (let x of slides) {
+            x.classList.remove("showing1");
+            x.classList.remove("showing3");
+            x.classList.add("showing2");
+        };
 
         btn1.classList.remove(SHOWING_CLASS);
         btn3.classList.remove(SHOWING_CLASS);
@@ -67,14 +72,14 @@ btn2.addEventListener("click", () => {
 
 btn3.addEventListener("click", () => {
     if (btn3.classList[1] !== SHOWING_CLASS) {
-        document.querySelector(".li1").classList.remove(SHOWING_CLASS);
-        document.querySelector(".li2").classList.remove(SHOWING_CLASS);
-        document.querySelector(".li3").classList.add(SHOWING_CLASS);
+        for (let x of slides) {
+            x.classList.remove("showing1");
+            x.classList.remove("showing2");
+            x.classList.add("showing3");
+        };
 
         btn1.classList.remove(SHOWING_CLASS);
         btn2.classList.remove(SHOWING_CLASS);
         btn3.classList.add(SHOWING_CLASS);
     }
 });
-
-
