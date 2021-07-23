@@ -105,6 +105,38 @@ section.slidebox {
     overflow: hidden;
 }
 
+section.slidebox button.slide {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px 15px;
+    font-size: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    border: none;
+    border-radius: 1px;
+}
+
+section.slidebox button.next {
+    right: 0;
+}
+
+section.slidebox button.prev {
+    left: 0;
+}
+
+section.slidebox button.slide:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000;
+}
+
+section.slidebox button.slide:active {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
 section.slidebox ul {
     list-style: none;
     margin: 0;
