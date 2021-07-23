@@ -99,6 +99,7 @@ a {
 section.slidebox {
     background-color: #ff595e;
     max-width: 700px;
+    width: 100%;
     height: 400px;
     margin: 0 auto;
     overflow: hidden;
@@ -114,13 +115,12 @@ section.slidebox ul {
     left: 0;
     top: 0;
     width: 2100px;
-    transition: all 500ms ease-in-out;
 }
 
 section.slidebox ul li {
     float: left;
     text-align: center;
-    transition: all 500ms ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 
 section.slidebox ul li.showing1 {
@@ -133,9 +133,9 @@ section.slidebox ul li.showing3 {
     transform: translateX(-200%);
 }
 
-ul li img {
+section.slidebox ul li img {
     max-width: 700px;
-    width: 100%;
+    width: 100vw;
     height: 400px;
 }
 
@@ -163,6 +163,32 @@ section.slidebox div.btn_container button {
 section.slidebox div.btn_container button:hover {
     background-color: #333;
 }
+
+section.slidebox ul.slideitem li h1 {
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    top: 99%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 300ms ease-in-out;
+}
+
+section.slidebox ul.slideitem li:hover h1 {
+    opacity: 1;
+    transform: translateY(-99%) ;
+}
+
 
 .modal__first,
 .modal__second,
