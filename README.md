@@ -101,6 +101,7 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
  * 버전 0.5.6.4 : Stretching 페이지 버튼 클릭 시 버튼에 해당 위치 표시 및 Animation 효과 추가.
  * 버전 0.5.6.5 : Stretching 페이지에서 이미지 커서 오버 시 글씨 나타나게 한 후 해당 정보에 맞는 동영상이 나오도록 모달 Pop up 추가, 이미지 크기 조절.
  * 버전 0.5.6.6 : Stretching 페이지에 다음, 이전으로 넘어가는 버튼 추가.(기존 버튼은 이미지 따라 움직였으나 Javascript를 이용하는 방법으로 변경하여 고정)
+ * 버전 0.5.6.7 : Stretching 페이지 Media Query 적용하여 모바일 화면 최적화.
 
 ### Source code
 ###### 사이트 이동(메인) : https://junhyeong-b.github.io/html/fitmanager_ver2.html
