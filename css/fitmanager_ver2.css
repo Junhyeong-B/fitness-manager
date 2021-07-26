@@ -61,7 +61,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     padding: 40px 100px;
     z-index: 1;
     display: flex;
@@ -84,11 +84,12 @@ header .logo i {
 header .navigation {
     position: relative;
     display: flex;
+    justify-content: space-around;
+    width: 700px;
 }
 
 header .navigation li {
     list-style: none;
-    margin-left: 30px;
 }
 
 header .navigation li a {
@@ -103,7 +104,7 @@ body {
 }
 
 header.sticky {
-    background-color: #fff;
+    background-color: #edf2f4;
     padding: 10px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
@@ -116,4 +117,100 @@ header.sticky .navigation li a {
 
 header .navigation li a:hover {
     color: #ff3c4c;
+}
+
+div.burger {
+    display: none;
+}
+
+header div.burger div {
+    width: 25px;
+    height: 4px;
+    background-color: #111;
+    margin: 5px;
+    border-radius: 2px;
+    transition: 100ms ease-in;
+}
+
+@media screen and (max-width: 768px) {
+    div.burger {
+        display: block;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 50%;
+        transition: 100ms;
+    }
+
+    header,
+    header.sticky {
+        background-color: #edf2f4;
+        padding: 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        height: 5vh;
+    }
+
+    header .logo {
+        font-size: 28px;
+        color: #000;
+    }
+
+    header .navigation li a,
+    header.sticky .navigation li a {
+        padding: 0 8px;
+        border-radius: 10px;
+        color: #222;
+        font-size: 22px;
+    }
+
+    header .navigation {
+        position: absolute;
+        top: 5vh;
+        right: -300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #eddcd2;
+        width: 300px;
+        height: 95vh;
+        transition: 500ms ease;
+    }
+
+    header .navigation.active {
+        right: 0;
+    }
+
+    header .navigation li {
+        opacity: 0;
+    }
+
+    header .navigation li a:hover {
+        background-color: #222;
+        color: #eddcd2;
+    }
+
+    div.burger.active {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    header div.burger div.line.active:first-child {
+        transform: rotateZ(-45deg) translate(-6.5px, 6px);
+    }
+    header div.burger div.line.active:nth-child(2) {
+        opacity: 0;
+    }
+    header div.burger div.line.active:last-child {
+        transform: rotateZ(45deg) translate(-6.5px, -6px);
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
