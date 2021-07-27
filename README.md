@@ -106,7 +106,7 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
 <img src="https://user-images.githubusercontent.com/85148549/126889011-b25e4db3-6a65-48ad-a3a7-b0fe8aa696f9.JPG" height="250px">
 <p align="center">[Stretching 페이지 : Javascript 적용 후 화면 / Mobile 화면]</p>
 
- * 버전 0.5.6.8 : Fitness Manager 첫 화면에서 768px 이하일 때 토글 메뉴가 나타나게 수정, Animation 효과를 이용하여 순서대로 메뉴가 나타나도록 추가.
+ * 버전 0.5.6.8 : Fitness Manager 첫 화면에서 태블릿(481~768px), 모바일(~480px) 일 때 토글 메뉴가 나타나게 수정, Animation 효과를 이용하여 순서대로 메뉴가 나타나도록 추가.
 
 
 ### Source code
