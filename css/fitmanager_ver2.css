@@ -204,6 +204,29 @@ header div.burger div {
     }
 }
 
+@media screen and (max-width: 480px) {
+    header .logo {
+        font-size: 22px;
+    }
+
+    header,
+    header.sticky {
+        height: 6vh;
+    }
+
+    header .navigation li a,
+    header.sticky .navigation li a {
+        font-size: 18px;
+    }
+
+    header .navigation {
+        top: 6vh;
+        right: -200px;
+        width: 200px;
+        height: 94vh;
+    }
+}
+
 @keyframes navLinkFade {
     from {
         transform: translateX(50px);
