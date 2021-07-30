@@ -75,7 +75,7 @@ a {
     padding: 10px;
 }
 
-h1 {
+.title h1 {
     font-family: 'Jua', sans-serif;
     text-align: center;
 }
@@ -176,8 +176,9 @@ ul {
     transform: translateY(30px);
 }
 
-.fill {
-    background-image: url("../images/diet-food.png");
+.musclePng,
+.dietPng,
+.healthPng {
     background-position: center;
     background-size: cover;
     position: relative;
@@ -186,6 +187,18 @@ ul {
     top: 5px;
     left: 5px;
     cursor: pointer;
+}
+
+.musclePng {
+    background-image: url("../images/muscle.png");
+}
+
+.dietPng {
+    background-image: url("../images/diet-food.png");
+}
+
+.healthPng {
+    background-image: url("../images/cardio.png");
 }
 
 .empty {
@@ -208,4 +221,40 @@ ul {
 
 .invisible {
     display: none;
+}
+
+.dragImg {
+    width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.show {
+    background-color: #003049;
+    margin: 0 auto;
+    max-width: 500px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.show .dropPT {
+    border: 5px solid #ccc;
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+.show .dropPT img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(95deg) brightness(100%) contrast(106%);
 }

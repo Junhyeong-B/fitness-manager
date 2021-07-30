@@ -42,11 +42,13 @@ diet2.addEventListener("click", () => {
 })
 
 // Drag & Drop
-const fill = document.querySelector(".fill");
+const musclePng = document.querySelector(".musclePng");
 const empties = document.querySelectorAll(".empty");
+const dropPT = document.querySelector(".dropPT");
 
-fill.addEventListener("dragstart", dragStart);
-fill.addEventListener("dragend", dragEnd);
+
+musclePng.addEventListener("dragstart", dragStart);
+musclePng.addEventListener("dragend", dragEnd);
 
 
 for (const empty of empties) {
@@ -63,7 +65,7 @@ function dragStart() {
 }
 
 function dragEnd() {
-    this.className = "fill"
+    this.className = "musclePng"
 }
 
 function dragOver(e) {
@@ -81,5 +83,5 @@ function dragLeave() {
 
 function dragDrop() {
     this.className = "empty"
-    this.append(fill);
+    this.append(musclePng);
 }
