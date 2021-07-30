@@ -109,6 +109,7 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
  * 버전 0.5.6.8 : Fitness Manager 첫 화면에서 태블릿(481~768px), 모바일(~480px) 일 때 토글 메뉴가 나타나게 수정, Animation 효과를 이용하여 순서대로 메뉴가 나타나도록 추가.
 
  * 버전 0.5.7 : Nutrition 페이지에 Javascript를 이용한 Drag & Drop 형태로 Diet, Muscle, Health 3가지 형태의 아이콘을 입력했을 때 해당 정보가 나타나도록 수정 예정(현재 Drag & Drop 만 구현, nutrition_ver2)
+ * 버전 0.5.7.1 : Nutrition 페이지에서 근육량 증가, 다이어트, 건강 증진 세가지 테마에 맞는 Icon 추가 및 차후 (+) 부분에 해당 아이콘을 드래그 & 드랍 하면 정보 나타나게 수정 예정.
 
 
 ### Source code
