@@ -43,29 +43,55 @@ diet2.addEventListener("click", () => {
 
 // Drag & Drop
 const musclePng = document.querySelector(".musclePng");
+const dietPng = document.querySelector(".dietPng");
+const healthPng = document.querySelector(".healthPng");
+let cnt = 0;
+
 const empties = document.querySelectorAll(".empty");
 const dropPT = document.querySelector(".dropPT");
+const plus = document.querySelector(".plus");
 
 
-musclePng.addEventListener("dragstart", dragStart);
-musclePng.addEventListener("dragend", dragEnd);
+musclePng.addEventListener("dragstart", dragMuscleStart);
+musclePng.addEventListener("dragend", dragMuscleEnd);
+
+dietPng.addEventListener("dragstart", dragDietStart);
+dietPng.addEventListener("dragend", dragDietEnd);
+
+healthPng.addEventListener("dragstart", dragHealthStart);
+healthPng.addEventListener("dragend", dragHealthEnd);
 
 
-for (const empty of empties) {
-    empty.addEventListener("dragover", dragOver);
-    empty.addEventListener("dragenter", dragEnter);
-    empty.addEventListener("dragleave", dragLeave);
-    empty.addEventListener("drop", dragDrop);
+dropPT.addEventListener("dragover", dragOver);
+dropPT.addEventListener("dragenter", dragEnter);
+dropPT.addEventListener("dragleave", dragLeave);
+dropPT.addEventListener("drop", dragDrop);
+
+
+function dragMuscleStart() {
+    cnt = 1;
+    this.className += " hold";
+    setTimeout(() => this.className = "invisible", 0);
 }
-
-
-function dragStart() {
+function dragDietStart() {
+    cnt = 2;
+    this.className += " hold";
+    setTimeout(() => this.className = "invisible", 0);
+}
+function dragHealthStart() {
+    cnt = 3;
     this.className += " hold";
     setTimeout(() => this.className = "invisible", 0);
 }
 
-function dragEnd() {
+function dragMuscleEnd() {
     this.className = "musclePng"
+}
+function dragDietEnd() {
+    this.className = "dietPng"
+}
+function dragHealthEnd() {
+    this.className = "healthPng"
 }
 
 function dragOver(e) {
@@ -74,14 +100,26 @@ function dragOver(e) {
 
 function dragEnter(e) {
     e.preventDefault();
-    this.className += " hoverd";
+    setTimeout(() => this.className += " hoverd", 0);
 }
 
 function dragLeave() {
-    this.className = "empty"
+    this.className = "dropPT"
 }
 
 function dragDrop() {
-    this.className = "empty"
-    this.append(musclePng);
+    this.className = "dropPt"
+    plus.style.display="none";
+    if (cnt === 1) {
+        empties[0].classList.add("centerDiv");
+        this.append(empties[0]);
+    }
+    else if (cnt === 2) {
+        empties[1].classList.add("centerDiv");
+        this.append(empties[1]); 
+    }
+    else if (cnt === 3) {
+        empties[2].classList.add("centerDiv");
+        this.append(empties[2]);
+    }
 }

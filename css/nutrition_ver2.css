@@ -214,11 +214,6 @@ ul {
     border: 6px solid #ccc;
 }
 
-.hoverd {
-    background-color: #f4f4f4;
-    border-style: dashed;
-}
-
 .invisible {
     display: none;
 }
@@ -233,23 +228,29 @@ ul {
     background-color: #003049;
     margin: 0 auto;
     max-width: 500px;
-    height: 300px;
+    height: 280px;
     border-radius: 20px;
 }
 
 .show .dropPT {
-    border: 5px solid #ccc;
-    border-radius: 20px;
-    width: 250px;
-    height: 250px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    color: #ccc;
+    transition: 500ms ease;
 }
 
-.show .dropPT img {
+.show .dropPT.hoverd {
+    border: 8px solid #8ecae6;
+    width: 220px;
+    height: 220px;
+}
+
+.show .dropPT img.plus {
     width: 50px;
     height: 50px;
     position: relative;
@@ -257,4 +258,13 @@ ul {
     top: 50%;
     transform: translate(-50%, -50%);
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(95deg) brightness(100%) contrast(106%);
+}
+
+.show .centerDiv {
+    margin: 30px 0;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    border-color: #abcdef;
 }
