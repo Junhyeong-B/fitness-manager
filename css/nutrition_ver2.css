@@ -201,15 +201,6 @@ ul {
     background-image: url("../images/cardio.png");
 }
 
-.empty {
-    display: inline-block;
-    height: 210px;
-    width: 210px;
-    margin: 20px;
-    border: 5px solid #003049;
-    background-color: #fff;
-}
-
 .hold {
     border: 6px solid #ccc;
 }
@@ -222,6 +213,17 @@ ul {
     width: 90vw;
     margin: 0 auto;
     text-align: center;
+}
+
+.muscleIcon,
+.dietIcon,
+.healthIcon {
+    display: inline-block;
+    height: 210px;
+    width: 210px;
+    margin: 20px;
+    border: 5px solid #003049;
+    background-color: #fff;
 }
 
 .show {

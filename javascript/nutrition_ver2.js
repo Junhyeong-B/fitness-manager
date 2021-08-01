@@ -45,13 +45,16 @@ diet2.addEventListener("click", () => {
 const musclePng = document.querySelector(".musclePng");
 const dietPng = document.querySelector(".dietPng");
 const healthPng = document.querySelector(".healthPng");
+const muscleIcon = document.querySelector(".muscleIcon");
+const dietIcon = document.querySelector(".dietIcon");
+const healthIcon = document.querySelector(".healthIcon");
+const dragImg = document.querySelector(".dragImg");
 let cnt = 0;
 
-const empties = document.querySelectorAll(".empty");
 const dropPT = document.querySelector(".dropPT");
 const plus = document.querySelector(".plus");
 
-
+// Icon마다 Class 지정하여 구분
 musclePng.addEventListener("dragstart", dragMuscleStart);
 musclePng.addEventListener("dragend", dragMuscleEnd);
 
@@ -61,13 +64,13 @@ dietPng.addEventListener("dragend", dragDietEnd);
 healthPng.addEventListener("dragstart", dragHealthStart);
 healthPng.addEventListener("dragend", dragHealthEnd);
 
-
+// 해당 위치에 Drop 시 이벤트 진행
 dropPT.addEventListener("dragover", dragOver);
 dropPT.addEventListener("dragenter", dragEnter);
 dropPT.addEventListener("dragleave", dragLeave);
 dropPT.addEventListener("drop", dragDrop);
 
-
+// cnt 변수를 이용해 변수 구분
 function dragMuscleStart() {
     cnt = 1;
     this.className += " hold";
@@ -94,6 +97,7 @@ function dragHealthEnd() {
     this.className = "healthPng"
 }
 
+// dropPT에 Drag & Drop 시 함수
 function dragOver(e) {
     e.preventDefault();
 }
@@ -111,15 +115,39 @@ function dragDrop() {
     this.className = "dropPt"
     plus.style.display="none";
     if (cnt === 1) {
-        empties[0].classList.add("centerDiv");
-        this.append(empties[0]);
+        muscleIcon.classList.add("centerDiv");
+        if (dietIcon.classList.contains("centerDiv")) {
+            dietIcon.className = "dietIcon"
+            dragImg.append(dietIcon);
+        }
+        else {
+            healthIcon.className = "healthIcon"
+            dragImg.append(healthIcon);
+        }
+        this.append(muscleIcon);
     }
     else if (cnt === 2) {
-        empties[1].classList.add("centerDiv");
-        this.append(empties[1]); 
+        dietIcon.classList.add("centerDiv");
+        if (muscleIcon.classList.contains("centerDiv")) {
+            muscleIcon.className = "muscleIcon"
+            dragImg.append(muscleIcon);
+        }
+        else {
+            healthIcon.className = "healthIcon"
+            dragImg.append(healthIcon);
+        }
+        this.append(dietIcon);
     }
     else if (cnt === 3) {
-        empties[2].classList.add("centerDiv");
-        this.append(empties[2]);
+        healthIcon.classList.add("centerDiv");
+        if (muscleIcon.classList.contains("centerDiv")) {
+            muscleIcon.className = "muscleIcon"
+            dragImg.append(muscleIcon);
+        }
+        else {
+            dietIcon.className = "dietIcon"
+            dragImg.append(dietIcon);
+        }
+        this.append(healthIcon);
     }
 }
