@@ -60,7 +60,7 @@ a {
     justify-content: center;
 }
 
-.main .diet1,
+/* .main .diet1,
 .main .diet2 {
     font-family: 'Jua', sans-serif;
     border-radius: 5px;
@@ -123,17 +123,6 @@ ul {
     opacity: 0;
 }
 
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-     }
-}
-
 .main .diet1,
 .main .diet2 {
     cursor: pointer;
@@ -174,6 +163,17 @@ ul {
     display: flex;
     opacity: 1;
     transform: translateY(30px);
+} */
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+     }
 }
 
 .musclePng,
@@ -269,4 +269,22 @@ ul {
     transform: translateX(-50%);
     position: relative;
     border-color: #abcdef;
+}
+
+.cont1,
+.cont2,
+.cont3 {
+    padding: 20px;
+    background-color: #fefefe;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+    width: 700px;
+    border-radius: 10px;
+    position: relative;
+    margin: 20px auto;
+}
+
+h2.cont_title {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 10px;
 }
