@@ -117,7 +117,7 @@ main 페이지에서 그림에 나타나는 글씨가 작아 크기 수정.
 
 
 ### Source code
-###### 사이트 이동(메인) : https://junhyeong-b.github.io/html/fitmanager_ver2.html
+###### 사이트 이동(메인) : https://junhyeong-b.github.io/fitness-manager/html/fitmanager_ver2.html
 ###### HTML Folder : https://github.com/Junhyeong-B/Junhyeong-B.github.io/tree/main/html
 ###### CSS Folder : https://github.com/Junhyeong-B/Junhyeong-B.github.io/tree/main/css
 ###### Javascript Folder : https://github.com/Junhyeong-B/Junhyeong-B.github.io/tree/main/javascript
