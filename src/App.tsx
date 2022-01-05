@@ -1,5 +1,7 @@
+import { Nav } from './components';
+
 function App() {
-  return <div />;
+  return <Nav />;
 }
 
 export default App;
