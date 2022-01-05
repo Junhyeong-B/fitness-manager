@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
     "target": "es6",
     "lib": [
@@ -19,9 +20,13 @@
     "resolveJsonModule": true,
     "jsx": "react-jsx",
     "outDir": "./dist",
-    "typeRoots": ["./node_modules/@types", "types"]
+    "typeRoots": [
+      "./node_modules/@types",
+      "types"
+    ]
   },
   "include": [
-    "./src/**/*"
+    "src",
+    "craco.config.js"
   ]
 }
