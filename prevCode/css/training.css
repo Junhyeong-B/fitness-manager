@@ -1,0 +1,149 @@
+:root {
+    --text-color: rgb(228, 231, 231);
+    --background-color: rgba(94, 94, 94, 0.9);
+    --accent-color: rgb(255, 192, 74);
+    --toggle-color: rgba(0, 0, 0, 0.6);
+}
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: #fffcf2;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.main__head {
+    color: var(--text-color);
+    padding: 8px 12px;
+    font-size: 24px;
+}
+
+.main__head i {
+    color: var(--accent-color);
+}
+
+.main__links ul{
+    margin: 0;
+}
+
+.main__links ul li{
+    list-style: none;
+    font-size: 18px;
+    display: inline-block;
+    margin: 15px;
+}
+
+.main__links ul li:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px var(--text-color);  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+}
+
+.main__links ul li:hover:after {
+    transform: scaleX(1);
+}
+
+
+.mainCont {
+    width: 80vw;
+    margin: 50px auto;
+}
+
+section .menu {
+    position: relative;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom left, #34a0a4, #76c893);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+    width: 30%;
+    min-height: 500px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+}
+
+section .menu div {
+    font-weight: 700;
+    font-size: 2em;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+section .menu div:hover {
+    color: #fffcf2;
+}
+
+section .content {
+    display: block;
+    opacity: 1;
+    position: relative;
+    left: 30%;
+    top: -500px;
+    padding: 10px 20px;
+    width: 70%;
+    height: 480px;
+    background-color: #f5f5f5;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+}
+
+section .content .hidden {
+    display: none;
+    opacity: 0;
+}
+
+.menu, .content {
+    animation: fadeInAnimation ease 1s;
+    animation-fill-mode: forwards;
+    text-indent: 10px;
+    opacity: 0;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+     }
+}
+
+@media screen and (max-width: 768px) {
+    .mainCont {
+        margin-top: 30px;
+    }
+    section .menu {
+        position: initial;
+        flex-flow: row wrap;
+        width: 100%;
+        min-height: 0;
+        font-size: 0.8em;
+        padding: 10px 0;
+        text-decoration: underline;
+    }
+
+    section .menu div {
+        margin: 10px;
+    }
+
+    section .content {
+        position: initial;
+        width: 100%;
+        box-sizing: border-box;
+        height: 100%;
+    }
+}

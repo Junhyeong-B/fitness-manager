@@ -1,0 +1,354 @@
+:root {
+    --text-color: rgb(228, 231, 231);
+    --background-color: rgba(94, 94, 94, 0.9);
+    --accent-color: rgb(255, 192, 74);
+    --toggle-color: rgba(0, 0, 0, 0.6);
+}
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: #fffcf2;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.main__head {
+    color: var(--text-color);
+    padding: 8px 12px;
+    font-size: 24px;
+}
+
+.main__head i {
+    color: var(--accent-color);
+}
+
+.main__links ul{
+    margin: 0;
+}
+
+.main__links ul li{
+    list-style: none;
+    font-size: 18px;
+    display: inline-block;
+    margin: 15px;
+}
+
+.main__links ul li:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px var(--text-color);  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+}
+
+.main__links ul li:hover:after {
+    transform: scaleX(1);
+}
+
+.main {
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+}
+
+.main span {
+    color: #ff595e;
+    font-size: 20px;
+}
+
+.main h1,
+.main h3 {
+    animation: fadeInAnimation ease 1s;
+    animation-fill-mode: forwards;
+}
+
+.main p {
+    animation: fadeInAnimation ease 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.slidebox {
+    animation: fadeInAnimation ease 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+     }
+}
+
+section.slidebox {
+    background-color: #ff595e;
+    max-width: 700px;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+section.slidebox button.slide {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px 15px;
+    font-size: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    border: none;
+    border-radius: 1px;
+}
+
+section.slidebox button.next {
+    right: 0;
+}
+
+section.slidebox button.prev {
+    left: 0;
+}
+
+section.slidebox button.slide:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000;
+}
+
+section.slidebox button.slide:active {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+section.slidebox ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2100px;
+}
+
+section.slidebox ul li {
+    float: left;
+    text-align: center;
+    transition: all 400ms ease-in-out;
+}
+
+section.slidebox ul li.showing1 {
+    transform: translateX(0);
+}
+section.slidebox ul li.showing2 {
+    transform: translateX(-100%);
+}
+section.slidebox ul li.showing3 {
+    transform: translateX(-200%);
+}
+
+section.slidebox ul li img {
+    max-width: 700px;
+    width: 100vw;
+    height: 400px;
+}
+
+section.slidebox div.btn_container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.slidebox div.btn_container button.showing {
+    background-color: #666;
+}
+
+section.slidebox div.btn_container button {
+    background-color: #fff;
+    width: 50px;
+    height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 300ms;
+}
+
+section.slidebox div.btn_container button:hover {
+    background-color: #333;
+}
+
+section.slidebox ul.slideitem li h1 {
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    top: 99%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 300ms ease-in-out;
+}
+
+section.slidebox ul.slideitem li:hover h1 {
+    opacity: 1;
+    transform: translateY(-99%) ;
+}
+
+.modal__first,
+.modal__second,
+.modal__third {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    transition: 400ms ease-in-out;
+}
+
+.modal__first .modal,
+.modal__second .modal,
+.modal__third .modal {
+    display: inline-block;
+    position: absolute;
+    padding: 10px 20px 30px 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+    transition: 300ms ease-in-out;
+}
+
+.modal__first.active .modal,
+.modal__second.active .modal,
+.modal__third.active .modal {
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+.modal__first.active,
+.modal__second.active,
+.modal__third.active {
+    visibility: visible;
+}
+
+.head {
+    margin: 5px 0px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #e6b65f;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 60px;
+}
+
+.head i.fa {
+    font-size: 30px;
+    color: #e6b65f;
+}
+
+.modal .closs__btn {
+    margin-top: 15px;
+}
+
+.modal .closs__btn button {
+    padding: 10px 20px;
+    background: #111;
+    color: #f5f5f5;
+    border: 2px solid #111;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 5px;
+    transition: all 300ms ease-in-out;
+}
+
+.modal .closs__btn button:hover {
+    color: #111;
+    background: #f5f5f5;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    section.slidebox {
+        background-color: #ff595e;
+        max-width: 90vw;
+        width: 100%;
+        height: 50vw;
+    }
+
+    section.slidebox ul li img {
+        max-width: 90vw;
+        width: 100vw;
+        height: 50vw;
+    }
+
+    section.slidebox div.btn_container button {
+        width: 40px;
+        height: 8px;
+    }
+    
+    .modal__first .modal,
+    .modal__second .modal,
+    .modal__third .modal {
+        width: 90vw;
+        padding: 10px;
+    }
+
+    .description iframe {
+        width: 100%;
+        height: 300px;
+    }
+}

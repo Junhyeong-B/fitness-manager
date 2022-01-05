@@ -1,0 +1,185 @@
+:root {
+    --text-color: rgb(228, 231, 231);
+    --background-color: rgba(94, 94, 94, 0.9);
+    --accent-color: rgb(255, 192, 74);
+    --toggle-color: rgba(0, 0, 0, 0.6);
+}
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: #fffcf2;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.main__head {
+    color: var(--text-color);
+    padding: 8px 12px;
+    font-size: 24px;
+}
+
+.main__head i {
+    color: var(--accent-color);
+}
+
+.main__links ul{
+    margin: 0;
+}
+
+.main__links ul li{
+    list-style: none;
+    font-size: 18px;
+    display: inline-block;
+    margin: 15px;
+}
+
+.main__links ul li:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px var(--text-color);  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+}
+
+.main__links ul li:hover:after {
+    transform: scaleX(1);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+     }
+}
+
+.musclePng,
+.dietPng,
+.healthPng {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.musclePng {
+    background-image: url("../images/muscle.png");
+}
+
+.dietPng {
+    background-image: url("../images/diet-food.png");
+}
+
+.healthPng {
+    background-image: url("../images/cardio.png");
+}
+
+.hold {
+    border: 6px solid #ccc;
+}
+
+.invisible {
+    display: none;
+}
+
+.dragImg {
+    width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.muscleIcon,
+.dietIcon,
+.healthIcon {
+    display: inline-block;
+    height: 210px;
+    width: 210px;
+    margin: 20px;
+    border: 5px solid #003049;
+    background-color: #fff;
+}
+
+.show {
+    background-color: #003049;
+    margin: 0 auto;
+    max-width: 500px;
+    height: 280px;
+    border-radius: 20px;
+}
+
+.show .dropPT {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 500ms ease;
+}
+
+.show .dropPT.hoverd {
+    border: 8px solid #8ecae6;
+    width: 220px;
+    height: 220px;
+}
+
+.show .dropPT img.plus {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(95deg) brightness(100%) contrast(106%);
+}
+
+.show .centerDiv {
+    margin: 30px 0;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    border-color: #abcdef;
+}
+
+.cont1,
+.cont2,
+.cont3 {
+    padding: 20px;
+    background-color: #fefefe;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+    width: 700px;
+    border-radius: 10px;
+    position: relative;
+    margin: 20px auto;
+}
+
+h2.cont_title {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 10px;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Manager</title>
+    <link rel="stylesheet" href="../css/stretching.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="main__head">
+                <a href="./fitmanager_ver2.html"><i class="fas fa-spa"></i> FITNESS MANAGER</a>
+                <div class="main__links">
+                    <ul>
+                        <li><a href="./main.html">Main Menu</a></li>
+                        <li><a href="./workoutinfo.html">Workout Information</a></li>
+                        <li><a href="./workoutlog.html">MY Own Workout Log</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <h1>동적 스트레칭 vs 정적 스트레칭</h1>
+            <h3>(Dynamic Stretching vs Static Stretching)</h3>
+            <p><span>(운동 전)</span> 동적 스트레칭(Dynamic stretching) : 근육과 관절이 움직이는 범위(가동 범위)를 많이 활용하면서 움직이는 동작</p>
+            <p><span>(운동 후)</span> 정적 스트레칭(Static stretching) : 근육과 관절이 움직이는 범위(가동 범위)를 많이 활용하면서 멈추어 있는 동작</p>
+        </div>
+        <div class="slidebox">
+            <input type="radio" name="slide" id="slide01" checked>
+            <input type="radio" name="slide" id="slide02">
+            <input type="radio" name="slide" id="slide03">
+            <ul class="slidelist">
+                <li class="slideitem">
+                    <div>
+                        <label for="slide03" class="left"></label>
+                        <label for="slide02" class="right"></label>
+                        <div class="first__img">
+                            <img src="../images/why.JPG">
+                            <div class="first__content">
+                                <h1>운동 전 동적스트레칭 vs 정적스트레칭</h1>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="slideitem">
+                    <div>
+                        <label for="slide01" class="left"></label>
+                        <label for="slide03" class="right"></label>
+                        <div class="second__img">
+                            <img src="../images/dynamic.JPG">
+                            <div class="second__content">
+                                <h1>운동 전 동적스트레칭</h1>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="slideitem">
+                    <div>
+                        <label for="slide02" class="left"></label>
+                        <label for="slide01" class="right"></label>
+                        <div class="third__img">
+                            <img src="../images/static.JPG">
+                            <div class="third__content">
+                                <h1>운동 후 정적스트레칭</h1>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="modal__first">
+            <div class="modal">
+                <div class="head">
+                    <i class="fa fa-check"></i>
+                </div>
+                <div class="description">
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/PCJJ1sWPDMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="closs__btn">
+                    <button class="close__modal1">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal__second">
+            <div class="modal">
+                <div class="head">
+                    <i class="fa fa-check"></i>
+                </div>
+                <div class="description">
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/gMKrEgAdmmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="closs__btn">
+                    <button class="close__modal2">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal__third">
+            <div class="modal">
+                <div class="head">
+                    <i class="fa fa-check"></i>
+                </div>
+                <div class="description">
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/xRuXDojcbgk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="closs__btn">
+                    <button class="close__modal3">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../javascript/stretching.js" defer></script>
+    <script src="https://kit.fontawesome.com/c6ef7432cb.js"
+    crossorigin="anonymous">
+    </script>
+</body>
+</html>
