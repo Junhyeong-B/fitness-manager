@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Francois One', sans-serif;
+}
+
+p {
+    font-weight: 300;
+    color: #111;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/backSquat.JPG");;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .content {
+    text-align: center;
+    max-width: 900px;
+}
+
+.banner .content h2 {
+    font-size: 5em;
+    color: #fff;
+}
+
+.banner .content p {
+    font-size: 1em;
+    color: #fff;
+}
+
+.btn {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #e63946;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 500ms;
+}
+
+.btn:hover {
+    letter-spacing: 6px;
+    padding: 12px 32px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 40px 100px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 500ms;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header .logo i {
+    color: #ffc04a;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+}
+
+header .navigation li {
+    list-style: none;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    transition: all 300ms;
+}
+
+body {
+    min-height: 1000px;
+}
+
+header.sticky {
+    background-color: #edf2f4;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+header.sticky .logo,
+header.sticky .navigation li a {
+    color: #111;
+}
+
+header .navigation li a:hover {
+    color: #ff3c4c;
+}
+
+div.burger {
+    display: none;
+}
+
+header div.burger div {
+    width: 25px;
+    height: 4px;
+    background-color: #111;
+    margin: 5px;
+    border-radius: 2px;
+    transition: 100ms ease-in;
+}
+
+@media screen and (max-width: 768px) {
+    div.burger {
+        display: block;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 50%;
+        transition: 100ms;
+    }
+
+    header,
+    header.sticky {
+        background-color: #edf2f4;
+        padding: 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        height: 5vh;
+    }
+
+    header .logo {
+        font-size: 28px;
+        color: #000;
+    }
+
+    header .navigation li a,
+    header.sticky .navigation li a {
+        padding: 0 8px;
+        border-radius: 10px;
+        color: #222;
+        font-size: 22px;
+    }
+
+    header .navigation {
+        position: absolute;
+        top: 5vh;
+        right: -300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #eddcd2;
+        width: 300px;
+        height: 95vh;
+        transition: 500ms ease;
+    }
+
+    header .navigation.active {
+        right: 0;
+    }
+
+    header .navigation li {
+        opacity: 0;
+    }
+
+    header .navigation li a:hover {
+        background-color: #222;
+        color: #eddcd2;
+    }
+
+    div.burger.active {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    header div.burger div.line.active:first-child {
+        transform: rotateZ(-45deg) translate(-6.5px, 6px);
+    }
+    header div.burger div.line.active:nth-child(2) {
+        opacity: 0;
+    }
+    header div.burger div.line.active:last-child {
+        transform: rotateZ(45deg) translate(-6.5px, -6px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header .logo {
+        font-size: 22px;
+    }
+
+    header,
+    header.sticky {
+        height: 6vh;
+    }
+
+    header .navigation li a,
+    header.sticky .navigation li a {
+        font-size: 18px;
+    }
+
+    header .navigation {
+        top: 6vh;
+        right: -200px;
+        width: 200px;
+        height: 94vh;
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
