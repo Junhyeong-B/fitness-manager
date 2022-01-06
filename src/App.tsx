@@ -1,7 +1,14 @@
-import { Nav } from './components';
+import React from 'react';
+import { MainMenuImage, Nav } from './components';
+import { MAINMENUIMAGEURL, MAINMENUTITLE } from './constants';
 
 function App() {
-  return <Nav />;
+  return (
+    <React.Fragment>
+      <Nav />
+      <MainMenuImage imageUrls={MAINMENUIMAGEURL} titles={MAINMENUTITLE} />
+    </React.Fragment>
+  );
 }
 
 export default App;

@@ -3,4 +3,11 @@ export const Colors = Object.freeze({
   backgroundColor: 'rgba(94, 94, 94, 0.9)',
   accentColor: 'rgb(255, 192, 74)',
   toggleColor: 'rgba(0, 0, 0, 0.6)',
+
+  trainingColor: '#0f4c5c',
+  trainingBackgroundColor: '#c6def199',
+  nutritionColor: '#ff6b6b',
+  nutritionBackgroundColor: '#f2c6de99',
+  stretchingColor: '#f7b801',
+  stretchingBackgroundColor: '#faedcb99',
 });

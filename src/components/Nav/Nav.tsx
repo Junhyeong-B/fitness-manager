@@ -2,7 +2,7 @@ import { NAVLIST } from '@src/constants';
 import { Colors, FontSize, Media } from '@src/style';
 import styled from 'styled-components';
 
-const Nav = () => {
+const Nav = (): JSX.Element => {
   return (
     <NavContainer>
       <NavLogo>(ICON) FITNESS MANAGER</NavLogo>
@@ -21,7 +21,7 @@ const NavContainer = styled.header`
   padding: 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   background-color: black;
   color: ${Colors.brightText};
   font-weight: bold;
@@ -69,6 +69,7 @@ const NavLink = styled.li`
   &:after {
     display: block;
     content: '';
+    margin-top: 0.125rem;
     border-bottom: solid 3px ${Colors.brightText};
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
