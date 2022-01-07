@@ -2,12 +2,15 @@ import { Colors } from '@src/style';
 import React from 'react';
 import styled from 'styled-components';
 
-type GrowthImageProps = {
+type MainMenuImageProps = {
   imageUrls: string[];
   titles: string[];
 };
 
-const GrowthImage = ({ imageUrls, titles }: GrowthImageProps): JSX.Element => {
+const MainMenuImage = ({
+  imageUrls,
+  titles,
+}: MainMenuImageProps): JSX.Element => {
   const backgroundImageStyle = (url: string): { backgroundImage: string } => {
     return {
       backgroundImage: `url("${url}")`,
@@ -16,7 +19,10 @@ const GrowthImage = ({ imageUrls, titles }: GrowthImageProps): JSX.Element => {
   return (
     <Container>
       {imageUrls.map((url, i) => (
-        <ImageContainer style={backgroundImageStyle(url)}>
+        <ImageContainer
+          style={backgroundImageStyle(url)}
+          key={`main-menu-image-${i}`}
+        >
           <ImageBackground className={titles[i]}>
             <Title className={titles[i]}>{titles[i]}</Title>
           </ImageBackground>
@@ -26,7 +32,7 @@ const GrowthImage = ({ imageUrls, titles }: GrowthImageProps): JSX.Element => {
   );
 };
 
-export default GrowthImage;
+export default MainMenuImage;
 
 const Container = styled.div`
   display: flex;

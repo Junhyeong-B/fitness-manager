@@ -12,3 +12,15 @@ export const MAINMENUIMAGEURL = [
 ];
 
 export const MAINMENUTITLE = ['Training', 'Nutrition', 'Stretching'];
+
+export const WORKOUTIMAGEURL = [
+  'https://user-images.githubusercontent.com/85148549/148549780-474bce53-f26d-4584-85df-34af3159c885.JPG',
+  'https://user-images.githubusercontent.com/85148549/148549782-817fdc3f-7d61-4f9d-905b-885f564be4e4.JPG',
+  'https://user-images.githubusercontent.com/85148549/148549797-747a3275-1353-4c11-8e95-5b9f3a4c6bde.JPG',
+];
+
+export const WORKOUTINFO_THREEMAJORWORKOUT = [
+  '벤치프레스',
+  '데드리프트',
+  '스쿼트',
+];
