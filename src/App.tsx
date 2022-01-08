@@ -1,8 +1,9 @@
 import React from 'react';
-import { MainMenuImage, Nav, WorkoutInfo } from './components';
+import { MainMenuImage, Nav, Slider, WorkoutInfo } from './components';
 import {
   MAINMENUIMAGEURL,
   MAINMENUTITLE,
+  STRETCHINGIMAGEURL,
   WORKOUTIMAGEURL,
   WORKOUTINFO_THREEMAJORWORKOUT,
 } from './constants';
@@ -20,6 +21,7 @@ function App() {
           type={'vertical'}
         />
       ))}
+      <Slider urls={STRETCHINGIMAGEURL} />
     </React.Fragment>
   );
 }

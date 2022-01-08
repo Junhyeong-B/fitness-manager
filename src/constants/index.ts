@@ -24,3 +24,18 @@ export const WORKOUTINFO_THREEMAJORWORKOUT = [
   '데드리프트',
   '스쿼트',
 ];
+
+export const STRETCHINGIMAGEURL = [
+  {
+    url: 'https://user-images.githubusercontent.com/85148549/148647353-72f84e38-c536-44c7-8f36-fffd8f8ed2f4.JPG',
+    alt: '운동 전 동적스트레칭 vs 정적스트레칭',
+  },
+  {
+    url: 'https://user-images.githubusercontent.com/85148549/148647363-f8f0467d-c0b5-4f77-8fcd-48674ab40c94.JPG',
+    alt: '운동 전 동적스트레칭',
+  },
+  {
+    url: 'https://user-images.githubusercontent.com/85148549/148647364-a48db6af-06d9-4b70-9fde-4fcbc3d2c568.JPG',
+    alt: '운동 후 정적스트레칭',
+  },
+];
