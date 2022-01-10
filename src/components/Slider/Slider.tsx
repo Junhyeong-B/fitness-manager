@@ -1,3 +1,4 @@
+import { Colors, FontSize } from '@src/style';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
@@ -48,12 +49,17 @@ const Slider = ({
         </svg>
       </PrevButton>
       <ImageContainer style={{ transform: `translateX(-${currentIndex}00%)` }}>
-        {urls.map(({ url }) => (
+        {urls.map(({ url, alt }) => (
           <Image
             style={{
               backgroundImage: `url(${url})`,
             }}
-          />
+            key={url}
+          >
+            <SliderTitle>
+              <Title>{alt}</Title>
+            </SliderTitle>
+          </Image>
         ))}
       </ImageContainer>
       <NextButton onClick={NextButtonClickHandler}>
@@ -70,6 +76,34 @@ export default Slider;
 const SliderContainer = styled.div`
   position: relative;
   overflow: hidden;
+
+  &:hover h6 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
+
+const SliderTitle = styled.h6`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  transition: all 400ms;
+  transform: translateY(100%);
+  opacity: 0;
+`;
+
+const Title = styled.span`
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: ${FontSize.large};
+  transition: color 250ms ease;
+
+  &:hover {
+    color: ${Colors.accentColor};
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -80,7 +114,7 @@ const ImageContainer = styled.div`
   transition: all 500ms;
 `;
 
-const Image = styled.img`
+const Image = styled.div`
   width: 100%;
   height: 100%;
   background-position: center;
